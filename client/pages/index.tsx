@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AppBar from "../components/appBar/AppBar";
+import RegisterForm from "../components/register/RegisterForm";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main></main>
+      <main className="w-screen flex items-center justify-center mt-40">
+        <RegisterForm />
+      </main>
     </div>
   );
 }

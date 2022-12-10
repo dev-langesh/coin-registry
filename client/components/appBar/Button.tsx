@@ -7,12 +7,18 @@ export default function Button({
   text: String;
   type: "outlined" | "contained";
 }) {
-  const [style, setStyle] = useState("bg-white p-2 text-blue-500");
+  const [style, setStyle] = useState(
+    "bg-white p-2 text-blue-500 hover:bg-blue-500 hover:text-white"
+  );
 
   useEffect(() => {
     if (type == "outlined") {
-      setStyle("border border-white p-2 hover:bg-white hover:text-blue-500");
+      setStyle("border-white p-2 hover:bg-white hover:text-blue-500");
     }
   }, [type]);
-  return <span className={`${style} transition-all duration-300`}>{text}</span>;
+  return (
+    <span className={`border ${style} transition-all duration-300`}>
+      {text}
+    </span>
+  );
 }

@@ -14,6 +14,7 @@ const studentSchema = mongoose.Schema(
 
 const facultySchema = mongoose.Schema(
   {
+    faculty_id: { type: String, required: true, unique: true },
     name: { type: String, required: true },
     department: String,
   },

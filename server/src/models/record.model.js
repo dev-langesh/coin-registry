@@ -5,6 +5,7 @@ const studentRecordSchema = mongoose.Schema(
     student_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "student",
+      required: true,
     },
     purpose: String,
     in_time: String,
@@ -21,6 +22,7 @@ const facultyRecordSchema = mongoose.Schema(
     faculty_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "faculty",
+      required: true,
     },
     purpose: String,
     in_time: String,

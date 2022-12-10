@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function RegisterForm() {
   const [inputs, setInputs] = useState<inputType[]>([]);
-  const [values, setValues] = useState<any>({
+  const [state, setState] = useState<any>({
     user: "student",
   });
 
@@ -14,24 +14,24 @@ export default function RegisterForm() {
   }, []);
 
   useEffect(() => {
-    if (values.user === "student") setInputs(registerStudent);
+    if (state.user === "student") setInputs(registerStudent);
     else setInputs(registerFaculty);
-  }, [values.user]);
+  }, [state.user]);
 
   const handleRadioButtonChange = (e: any) => {
-    setValues((prev: any) => {
+    setState((prev: any) => {
       return {
         ...prev,
-        user: e.target.values,
+        user: e.target.value,
       };
     });
   };
 
   const handleChange = (e: any) => {
-    setValues((prev: any) => {
+    setState((prev: any) => {
       return {
         ...prev,
-        [e.target.name]: e.target.values,
+        [e.target.name]: e.target.value,
       };
     });
   };
@@ -39,9 +39,11 @@ export default function RegisterForm() {
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
+    console.log(state);
+
     const req = await axios.post(
       `${process.env.NEXT_PUBLIC_SERVER_URL}/user/register`,
-      values
+      state
     );
 
     console.log(req);
@@ -57,7 +59,7 @@ export default function RegisterForm() {
       <section className="flex items-center justify-around">
         <div className="flex items-center">
           <Radio
-            checked={values?.user === "student"}
+            checked={state?.user === "student"}
             onChange={handleRadioButtonChange}
             value="student"
             name="radio-buttons"
@@ -67,7 +69,7 @@ export default function RegisterForm() {
         </div>
         <div className="flex items-center">
           <Radio
-            checked={values?.user === "faculty"}
+            checked={state?.user === "faculty"}
             onChange={handleRadioButtonChange}
             value="faculty"
             name="radio-buttons"

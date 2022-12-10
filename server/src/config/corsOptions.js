@@ -2,7 +2,6 @@ const whitelist = ["http://localhost:5000", "http://localhost:3000"];
 
 const options = {
   origin: (origin, callback) => {
-    console.log(origin);
     if (
       whitelist.includes(origin) ||
       (process.env.NODE_ENV === "production" ? null : !origin)

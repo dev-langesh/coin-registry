@@ -2,11 +2,11 @@ function calculateDate() {
   const d = new Date();
 
   // calc today date
-  const day = d.getDay();
-  const m = d.getMonth();
+  const dt = d.getDate();
+  const m = d.getMonth() + 1;
   const y = d.getFullYear();
 
-  const date = `${day}-${m}-${y}`;
+  const date = `${dt}-${m}-${y}`;
 
   // calc current time
   const hr = Math.floor(d.getHours() / 2);

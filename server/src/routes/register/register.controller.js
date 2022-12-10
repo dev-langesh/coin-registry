@@ -6,13 +6,14 @@ const { calculateDate } = require("../../utils/calcDate");
 async function register(req, res) {
   const body = req.body;
 
-  console.log(req.body);
-
   try {
     if (body.user === "student") {
       let user = await Student.findOne({ reg_no: body.reg_no });
 
       if (!user) {
+        // if (!body.name || !body.department || !body.year) {
+        //   throw new Error();
+        // }
         user = await Student.create(body);
       }
 
@@ -23,6 +24,8 @@ async function register(req, res) {
         ...today,
         student_id: user._id,
       });
+
+      console.log(rec);
 
       res.json({ message: "Student registered" });
     }

@@ -19,7 +19,7 @@ export default function AppBar() {
       </div>
 
       <section className="space-x-6 text-xl">
-        <Link href="/register">
+        <Link href="/">
           <Button text="Register" type="contained" />
         </Link>
         <Link href="/events">

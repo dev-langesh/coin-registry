@@ -89,6 +89,7 @@ export default function RegisterForm() {
         cols={30}
         rows={5}
         placeholder="Purpose"
+        onChange={handleChange}
       ></textarea>
 
       <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Events() {
-  return <div>E</div>;
+  return <div>Events</div>;
 }

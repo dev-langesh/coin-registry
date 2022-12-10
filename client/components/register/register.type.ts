@@ -26,4 +26,23 @@ export const registerStudent: inputType[] = [
   },
 ];
 
-export const registerFaculty = [];
+export const registerFaculty = [
+  {
+    id: 1,
+    name: "name",
+    type: "text",
+    placeholder: "Name",
+  },
+  {
+    id: 2,
+    name: "department",
+    type: "text",
+    placeholder: "Department",
+  },
+  {
+    id: 3,
+    name: "out_time",
+    type: "text",
+    placeholder: "Out time",
+  },
+];

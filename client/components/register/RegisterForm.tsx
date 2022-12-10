@@ -1,10 +1,11 @@
 import { Radio } from "@mui/material";
 import React, { ReactHTML, useEffect, useState } from "react";
 import { registerStudent, inputType, registerFaculty } from "./register.type";
+import axios from "axios";
 
 export default function RegisterForm() {
   const [inputs, setInputs] = useState<inputType[]>([]);
-  const [state, setState] = useState<any>({
+  const [values, setValues] = useState<any>({
     user: "student",
   });
 
@@ -13,31 +14,37 @@ export default function RegisterForm() {
   }, []);
 
   useEffect(() => {
-    if (state.user === "student") setInputs(registerStudent);
+    if (values.user === "student") setInputs(registerStudent);
     else setInputs(registerFaculty);
-  }, [state.user]);
+  }, [values.user]);
 
   const handleRadioButtonChange = (e: any) => {
-    setState((prev: any) => {
+    setValues((prev: any) => {
       return {
         ...prev,
-        user: e.target.value,
+        user: e.target.values,
       };
     });
   };
 
   const handleChange = (e: any) => {
-    setState((prev: any) => {
+    setValues((prev: any) => {
       return {
         ...prev,
-        [e.target.name]: e.target.value,
+        [e.target.name]: e.target.values,
       };
     });
   };
 
-  const handleSubmit = (e: React.SyntheticEvent) => {
+  const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    console.log(state);
+
+    const req = await axios.post(
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/user/register`,
+      values
+    );
+
+    console.log(req);
   };
 
   return (
@@ -50,7 +57,7 @@ export default function RegisterForm() {
       <section className="flex items-center justify-around">
         <div className="flex items-center">
           <Radio
-            checked={state?.user === "student"}
+            checked={values?.user === "student"}
             onChange={handleRadioButtonChange}
             value="student"
             name="radio-buttons"
@@ -60,7 +67,7 @@ export default function RegisterForm() {
         </div>
         <div className="flex items-center">
           <Radio
-            checked={state?.user === "faculty"}
+            checked={values?.user === "faculty"}
             onChange={handleRadioButtonChange}
             value="faculty"
             name="radio-buttons"

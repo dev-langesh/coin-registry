@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../src/app/hooks";
 
 import {
@@ -11,6 +11,9 @@ export default function StudentRecord(props: any) {
   const record = useAppSelector(getStudentRecord);
   const registeredStudents = useAppSelector(getRegisteredStudents);
 
+  useEffect(() => {
+    console.log(record);
+  });
   return (
     <section>
       <TableHeader title="Students" />

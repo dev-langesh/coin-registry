@@ -22,16 +22,18 @@ export default function TableHeader({
     }
   };
   return (
-    <div className="py-4 flex justify-between items-center">
+    <>
       <FilterStudent />
       <FilterFaculty />
-      <span className="text-2xl font-semibold text-blue-500">{title}</span>
-      <button
-        onClick={openFilter}
-        className="bg-blue-500 rounded p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide  transition-all duration-200"
-      >
-        Filter
-      </button>
-    </div>
+      <div className="py-4 flex justify-between items-center">
+        <span className="text-2xl font-semibold text-blue-500">{title}</span>
+        <button
+          onClick={openFilter}
+          className="bg-blue-500 rounded p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide  transition-all duration-200"
+        >
+          Filter
+        </button>
+      </div>
+    </>
   );
 }

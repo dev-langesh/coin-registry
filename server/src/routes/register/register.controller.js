@@ -19,6 +19,7 @@ async function register(req, res) {
           console.log("inv roll");
           return res.json({ error: "Invalid reg no" });
         }
+        body.department = body.department.toUpperCase();
         user = await Student.create(body);
       }
 

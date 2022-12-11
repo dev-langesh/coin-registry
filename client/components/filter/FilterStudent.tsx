@@ -5,11 +5,12 @@ import {
   closeStudentFilter,
   isStudentFilterOpen,
 } from "../../src/features/filter/filterSlice";
-import { setRegisteredStudents } from "../../src/features/records/recordSlice";
+import { setStudentRecord } from "../../src/features/records/recordSlice";
 import { filterStudent, inputType } from "./filterOptions";
 
 export default function FilterStudent() {
   const [values, setValues] = useState<any>({});
+  const [loading, setLoading] = useState<boolean>(false);
 
   const isOpen = useAppSelector(isStudentFilterOpen);
 
@@ -27,16 +28,20 @@ export default function FilterStudent() {
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
+    setLoading(true);
+
     const req = await axios.post(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/record/filter-student`,
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/filter-student`,
       values
     );
 
     const data = await req.data;
 
-    console.log(data);
+    dispatch(setStudentRecord(data));
 
-    dispatch(setRegisteredStudents(data));
+    setLoading(false);
+
+    closeFilter();
   };
 
   const closeFilter = () => {
@@ -72,7 +77,7 @@ export default function FilterStudent() {
           );
         })}
         <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
-          Apply
+          {loading ? "Loading..." : "Apply"}
         </button>{" "}
       </form>
     </section>

@@ -1,13 +1,16 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../src/app/hooks";
 import {
   closeFacultyFilter,
   isFacultyFilterOpen,
 } from "../../src/features/filter/filterSlice";
+import { setFacultyRecord } from "../../src/features/records/recordSlice";
 import { filterFaculty, inputType } from "./filterOptions";
 
 export default function FilterFaculty() {
   const [values, setValues] = useState<any>({});
+  const [loding, setLoading] = useState<boolean>(false);
 
   const isOpen = useAppSelector(isFacultyFilterOpen);
 
@@ -25,7 +28,20 @@ export default function FilterFaculty() {
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
-    console.log(values);
+    setLoading(true);
+
+    const req = await axios.post(
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/filter-faculty`,
+      values
+    );
+
+    const data = await req.data;
+
+    dispatch(setFacultyRecord(data));
+
+    setLoading(false);
+
+    closeFilter();
   };
 
   const closeFilter = () => {
@@ -61,7 +77,7 @@ export default function FilterFaculty() {
           );
         })}
         <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
-          Apply
+          {loding ? "Loading..." : "Apply"}
         </button>{" "}
       </form>
     </section>

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAppSelector } from "../../src/app/hooks";
+import {
+  getFacultyRecord,
+  getRegisteredFaculties,
+} from "../../src/features/records/recordSlice";
 import TableHeader from "./TableHeader";
 
-export default function FacultyRecord({ record, registeredFaculties }: any) {
+export default function FacultyRecord() {
+  const registeredFaculties = useAppSelector(getRegisteredFaculties);
+  const record = useAppSelector(getFacultyRecord);
   return (
     <section>
       <TableHeader title="Faculties" />
@@ -27,7 +34,7 @@ export default function FacultyRecord({ record, registeredFaculties }: any) {
               );
 
               return (
-                <tr key={d.faculty_id} className="hover:bg-slate-100">
+                <tr key={d._id} className="hover:bg-slate-100">
                   <td className="border border-slate-300 p-2  ">
                     {faculty.faculty_id}
                   </td>

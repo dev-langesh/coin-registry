@@ -27,14 +27,8 @@ export default function Records({
 
   return (
     <section className="mt-20 p-4 space-y-5">
-      <StudentRecord
-        record={studentRecord}
-        registeredStudents={registeredStudents}
-      />
-      <FacultyRecord
-        record={facultyRecord}
-        registeredFaculties={registeredFaculties}
-      />
+      <StudentRecord />
+      <FacultyRecord />
     </section>
   );
 }

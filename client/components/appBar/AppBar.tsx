@@ -19,8 +19,8 @@ export default function AppBar() {
       </div>
 
       <section className="space-x-6 text-xl">
-        <Link href="/">
-          <Button text="Register" type="contained" />
+        <Link href="/records">
+          <Button text="Records" type="contained" />
         </Link>
         <Link href="/events">
           <Button text="Events" type="outlined" />

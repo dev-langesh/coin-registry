@@ -33,9 +33,42 @@ async function getFacultyRecords(req, res) {
   return res.json(data);
 }
 
+// POST -> /records/filter-student
+async function filteredStudent(req, res) {
+  const body = req.body;
+
+  const student = await Student.findOne(body);
+
+  console.log(student);
+
+  const data = await studentRecord.find({
+    student_id: student._id,
+    ...body,
+  });
+
+  return res.json(data);
+}
+
+// POST -> /records/filter-faculty
+async function filteredFaculty(req, res) {
+  const body = req.body;
+
+  const faculty = await Faculty.findOne(body);
+
+  console.log(faculty);
+
+  const data = await facultyRecord.find({
+    faculty_id: faculty._id,
+    ...body,
+  });
+  return res.json(data);
+}
+
 module.exports = {
   getStudentRecords,
   getFacultyRecords,
   registeredStudents,
   registeredFaculties,
+  filteredStudent,
+  filteredFaculty,
 };

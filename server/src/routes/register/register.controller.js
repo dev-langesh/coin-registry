@@ -11,9 +11,9 @@ async function register(req, res) {
       let user = await Student.findOne({ reg_no: body.reg_no });
 
       if (!user) {
-        // if (!body.name || !body.department || !body.year) {
-        //   throw new Error();
-        // }
+        if (!body.name || !body.department || !body.year) {
+          throw new Error();
+        }
         user = await Student.create(body);
       }
 
@@ -25,7 +25,7 @@ async function register(req, res) {
         student_id: user._id,
       });
 
-      console.log(rec);
+      // console.log(rec);
 
       res.json({ message: "Student registered" });
     }
@@ -46,13 +46,14 @@ async function register(req, res) {
         faculty_id: user._id,
       });
 
-      console.log(rec);
+      // console.log(rec);
       res.json({ message: "Faculty registered" });
     } else {
       throw new Error("fill all detaiils");
     }
   } catch (err) {
-    if (err) res.json({ error: "Fill all the details", err });
+    // console.log(err);
+    if (err) res.json({ error: "Fill all the details" });
   }
 }
 

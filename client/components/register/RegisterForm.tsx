@@ -1,12 +1,26 @@
-import { Radio } from "@mui/material";
-import React, { ReactHTML, useEffect, useState } from "react";
+import { Alert, Radio, Snackbar } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import { registerStudent, inputType, registerFaculty } from "./register.type";
 import axios from "axios";
 
+const initialState = {
+  user: "student",
+  reg_no: "",
+  name: "",
+  department: "",
+  year: "",
+  purpose: "",
+  out_time: "",
+};
+
 export default function RegisterForm() {
   const [inputs, setInputs] = useState<inputType[]>([]);
-  const [state, setState] = useState<any>({
-    user: "student",
+  const [state, setState] = useState<any>(initialState);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>();
+  const [message, setMessage] = useState<{ open: boolean; data: string }>({
+    open: false,
+    data: "",
   });
 
   useEffect(() => {
@@ -39,14 +53,34 @@ export default function RegisterForm() {
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
-    console.log(state);
+    setLoading(true);
 
     const req = await axios.post(
       `${process.env.NEXT_PUBLIC_SERVER_URL}/user/register`,
       state
     );
 
-    console.log(req);
+    const data = await req.data;
+
+    setLoading(false);
+
+    if (data.error) {
+      setError(true);
+    } else {
+      setMessage({
+        open: true,
+        data: data.message,
+      });
+      setState(initialState);
+    }
+  };
+
+  const closeError = () => {
+    setError(false);
+  };
+
+  const closeMessage = () => {
+    setMessage({ open: false, data: "" });
   };
 
   return (
@@ -86,6 +120,7 @@ export default function RegisterForm() {
             onChange={handleChange}
             key={input.id}
             name={input.name}
+            value={state[input.name]}
             placeholder={input.placeholder}
             type={input.type}
           />
@@ -99,11 +134,28 @@ export default function RegisterForm() {
         rows={5}
         placeholder="Purpose"
         onChange={handleChange}
+        value={state.purpose}
       ></textarea>
 
       <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
-        Submit
+        {loading ? "Loading..." : "Register"}
       </button>
+
+      <Snackbar open={error} autoHideDuration={4000} onClose={closeError}>
+        <Alert onClose={closeError} severity="error" sx={{ width: "100%" }}>
+          Fill all the Details
+        </Alert>
+      </Snackbar>
+
+      <Snackbar
+        open={message.open}
+        autoHideDuration={4000}
+        onClose={closeMessage}
+      >
+        <Alert onClose={closeMessage} severity="success" sx={{ width: "100%" }}>
+          {message.data}
+        </Alert>
+      </Snackbar>
     </form>
   );
 }

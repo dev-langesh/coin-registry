@@ -36,6 +36,12 @@ export const registerStudent: inputType[] = [
     type: "text",
     placeholder: "Out time (Eg. 1:10)",
   },
+  {
+    id: 6,
+    name: "status",
+    type: "text",
+    placeholder: "Status",
+  },
 ];
 
 export const registerFaculty = [
@@ -62,5 +68,11 @@ export const registerFaculty = [
     name: "out_time",
     type: "text",
     placeholder: "Out time (Eg. 1:10)",
+  },
+  {
+    id: 5,
+    name: "status",
+    type: "text",
+    placeholder: "Status",
   },
 ];

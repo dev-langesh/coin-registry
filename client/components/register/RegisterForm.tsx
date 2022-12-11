@@ -126,27 +126,32 @@ export default function RegisterForm() {
       </section>
       {inputs.map((input: inputType) => {
         return (
-          <input
-            className="border px-4 py-2"
-            onChange={handleChange}
-            key={input.id}
-            name={input.name}
-            value={state[input.name]}
-            placeholder={input.placeholder}
-            type={input.type}
-          />
+          <>
+            <input
+              className="border px-4 py-2"
+              onChange={handleChange}
+              key={input.id}
+              name={input.name}
+              value={state[input.name]}
+              placeholder={input.placeholder}
+              type={input.type}
+            />
+            {input.name === "out_time" && (
+              <textarea
+                className="border px-4 py-2"
+                name="purpose"
+                id="purpose"
+                cols={30}
+                rows={5}
+                placeholder="Purpose"
+                onChange={handleChange}
+                value={state.purpose}
+              ></textarea>
+            )}
+          </>
         );
       })}
-      <textarea
-        className="border px-4 py-2"
-        name="purpose"
-        id="purpose"
-        cols={30}
-        rows={5}
-        placeholder="Purpose"
-        onChange={handleChange}
-        value={state.purpose}
-      ></textarea>
+
       <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
         {loading ? "Loading..." : "Register"}
       </button>
@@ -164,10 +169,6 @@ export default function RegisterForm() {
           {message.data}
         </Alert>
       </Snackbar>
-      <p className="text-center">
-        If you have registered before <br />
-        Just enter reg no, out time and purpose
-      </p>
     </form>
   );
 }

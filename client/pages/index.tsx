@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AppBar from "../components/appBar/AppBar";
+import Instructions from "../components/register/Instructions";
 import RegisterForm from "../components/register/RegisterForm";
 
 export default function Home() {
@@ -11,8 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-screen flex items-center justify-center mt-36">
+      <main className="w-screen flex items-center justify-center mt-36 space-x-16">
+        <Instructions text="If you have already registered don't need to enter name,dep,reg num again" />
         <RegisterForm />
+        <Instructions text="If you want to modify the status enter your reg no or faculty id and the status" />
       </main>
     </div>
   );

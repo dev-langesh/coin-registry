@@ -10,7 +10,7 @@ export const registerStudent: inputType[] = [
     id: 1,
     name: "reg_no",
     type: "text",
-    placeholder: "Register Number",
+    placeholder: "Register Number (Eg. 2101131)",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const registerStudent: inputType[] = [
     id: 5,
     name: "out_time",
     type: "text",
-    placeholder: "Out time",
+    placeholder: "Out time (Eg. 1:10)",
   },
 ];
 
@@ -61,6 +61,6 @@ export const registerFaculty = [
     id: 4,
     name: "out_time",
     type: "text",
-    placeholder: "Out time",
+    placeholder: "Out time (Eg. 1:10)",
   },
 ];

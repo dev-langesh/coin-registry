@@ -12,7 +12,12 @@ async function register(req, res) {
 
       if (!user) {
         if (!body.name || !body.department || !body.year) {
-          throw new Error();
+          throw new Error("fill all details");
+        }
+
+        if (body.reg_no.length != 7) {
+          console.log("inv roll");
+          return res.json({ error: "Invalid reg no" });
         }
         user = await Student.create(body);
       }
@@ -55,7 +60,7 @@ async function register(req, res) {
       throw new Error("fill all detaiils");
     }
   } catch (err) {
-    // console.log(err);
+    console.log(err);
     if (err) res.json({ error: "Fill all the details" });
   }
 }

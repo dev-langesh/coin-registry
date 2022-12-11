@@ -17,7 +17,10 @@ export default function RegisterForm() {
   const [inputs, setInputs] = useState<inputType[]>([]);
   const [state, setState] = useState<any>(initialState);
   const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<boolean>();
+  const [error, setError] = useState<{ open: boolean; data: string }>({
+    open: false,
+    data: "",
+  });
   const [message, setMessage] = useState<{ open: boolean; data: string }>({
     open: false,
     data: "",
@@ -55,6 +58,8 @@ export default function RegisterForm() {
 
     setLoading(true);
 
+    console.log(state);
+
     const req = await axios.post(
       `${process.env.NEXT_PUBLIC_SERVER_URL}/user/register`,
       state
@@ -64,8 +69,10 @@ export default function RegisterForm() {
 
     setLoading(false);
 
+    console.log(data);
+
     if (data.error) {
-      setError(true);
+      setError({ open: true, data: data.error });
     } else {
       setMessage({
         open: true,
@@ -76,11 +83,17 @@ export default function RegisterForm() {
   };
 
   const closeError = () => {
-    setError(false);
+    setError((prev) => ({
+      ...prev,
+      open: false,
+    }));
   };
 
   const closeMessage = () => {
-    setMessage({ open: false, data: "" });
+    setMessage((prev) => ({
+      ...prev,
+      open: false,
+    }));
   };
 
   return (
@@ -141,9 +154,9 @@ export default function RegisterForm() {
         {loading ? "Loading..." : "Register"}
       </button>
 
-      <Snackbar open={error} autoHideDuration={4000} onClose={closeError}>
+      <Snackbar open={error.open} autoHideDuration={4000} onClose={closeError}>
         <Alert onClose={closeError} severity="error" sx={{ width: "100%" }}>
-          Fill all the Details
+          {error.data}
         </Alert>
       </Snackbar>
 

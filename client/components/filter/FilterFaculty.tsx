@@ -33,15 +33,18 @@ export default function FilterFaculty() {
   };
 
   return (
-    <div
-      onClick={closeFilter}
-      className={`${
-        isOpen ? "" : "hidden"
-      } absolute bg-black/30 w-screen h-screen top-0 left-0 flex items-center justify-center`}
-    >
+    <section>
+      <div
+        onClick={closeFilter}
+        className={`${
+          isOpen ? "" : "hidden"
+        } absolute bg-black/30 w-screen h-screen top-0 left-0 flex items-center justify-center`}
+      ></div>
       <form
         onSubmit={handleSubmit}
-        className="bg-white flex flex-col p-4 shadow-black/20 shadow-xl rounded space-y-4"
+        className={`${
+          isOpen ? "" : "hidden"
+        } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white flex flex-col p-4 shadow-black/20 shadow-xl rounded space-y-4`}
         action=""
       >
         <h1 className="text-center text-xl font-semibold">Filter Faculty</h1>
@@ -61,6 +64,6 @@ export default function FilterFaculty() {
           Apply
         </button>{" "}
       </form>
-    </div>
+    </section>
   );
 }

@@ -1,9 +1,11 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../src/app/hooks";
 import {
   closeStudentFilter,
   isStudentFilterOpen,
 } from "../../src/features/filter/filterSlice";
+import { setRegisteredStudents } from "../../src/features/records/recordSlice";
 import { filterStudent, inputType } from "./filterOptions";
 
 export default function FilterStudent() {
@@ -25,7 +27,16 @@ export default function FilterStudent() {
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
 
-    console.log(values);
+    const req = await axios.post(
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/record/filter-student`,
+      values
+    );
+
+    const data = await req.data;
+
+    console.log(data);
+
+    dispatch(setRegisteredStudents(data));
   };
 
   const closeFilter = () => {
@@ -33,15 +44,18 @@ export default function FilterStudent() {
   };
 
   return (
-    <div
-      onClick={closeFilter}
-      className={`${
-        isOpen ? "" : "hidden"
-      } absolute bg-black/30 w-screen h-screen top-0 left-0 flex items-center justify-center`}
-    >
+    <section>
+      <div
+        onClick={closeFilter}
+        className={`${
+          isOpen ? "" : "hidden"
+        } absolute bg-black/30 w-screen h-screen top-0 left-0 `}
+      ></div>
       <form
         onSubmit={handleSubmit}
-        className="bg-white flex flex-col p-4 shadow-black/20 shadow-xl rounded space-y-4"
+        className={`${
+          isOpen ? "" : "hidden"
+        } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white flex flex-col p-4 shadow-black/20 shadow-xl rounded space-y-4`}
         action=""
       >
         <h1 className="text-center text-xl font-semibold">Filter Student</h1>
@@ -61,6 +75,6 @@ export default function FilterStudent() {
           Apply
         </button>{" "}
       </form>
-    </div>
+    </section>
   );
 }

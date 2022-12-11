@@ -39,6 +39,10 @@ async function filteredStudent(req, res) {
 
   const student = await Student.findOne(body);
 
+  if (!student) {
+    return res.json({ error: "No records" });
+  }
+
   console.log(student);
 
   const data = await studentRecord.find({
@@ -55,12 +59,18 @@ async function filteredFaculty(req, res) {
 
   const faculty = await Faculty.findOne(body);
 
+  if (!faculty) {
+    return res.json({ error: "No records" });
+  }
+
   console.log(faculty);
 
   const data = await facultyRecord.find({
     faculty_id: faculty._id,
     ...body,
   });
+
+  console.log(data);
   return res.json(data);
 }
 

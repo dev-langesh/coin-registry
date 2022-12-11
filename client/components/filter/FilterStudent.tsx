@@ -1,3 +1,4 @@
+import { Alert, Snackbar } from "@mui/material";
 import axios from "axios";
 import React, { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../src/app/hooks";
@@ -11,6 +12,10 @@ import { filterStudent, inputType } from "./filterOptions";
 export default function FilterStudent() {
   const [values, setValues] = useState<any>({});
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<{ open: boolean; data: string }>({
+    open: false,
+    data: "",
+  });
 
   const isOpen = useAppSelector(isStudentFilterOpen);
 
@@ -37,15 +42,29 @@ export default function FilterStudent() {
 
     const data = await req.data;
 
-    dispatch(setStudentRecord(data));
-
     setLoading(false);
+
+    if (!data.error) {
+      dispatch(setStudentRecord(data));
+    } else {
+      setError({
+        open: true,
+        data: data.error,
+      });
+    }
 
     closeFilter();
   };
 
   const closeFilter = () => {
     dispatch(closeStudentFilter());
+  };
+
+  const closeError = () => {
+    setError((prev) => ({
+      ...prev,
+      open: false,
+    }));
   };
 
   return (
@@ -80,6 +99,12 @@ export default function FilterStudent() {
           {loading ? "Loading..." : "Apply"}
         </button>{" "}
       </form>
+
+      <Snackbar open={error.open} autoHideDuration={4000} onClose={closeError}>
+        <Alert onClose={closeError} severity="error" sx={{ width: "100%" }}>
+          {error.data}
+        </Alert>
+      </Snackbar>
     </section>
   );
 }

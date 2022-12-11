@@ -11,9 +11,6 @@ export default function StudentRecord(props: any) {
   const record = useAppSelector(getStudentRecord);
   const registeredStudents = useAppSelector(getRegisteredStudents);
 
-  useEffect(() => {
-    console.log(record);
-  });
   return (
     <section>
       <TableHeader title="Students" />

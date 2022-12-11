@@ -102,7 +102,6 @@ export default function RegisterForm() {
       className="flex flex-col space-y-6 shadow-2xl rounded-md p-6"
     >
       <h1 className="text-center text-3xl text-blue-500 font-bold">Register</h1>
-
       <section className="flex items-center justify-around">
         <div className="flex items-center">
           <Radio
@@ -125,7 +124,6 @@ export default function RegisterForm() {
           Faculty
         </div>
       </section>
-
       {inputs.map((input: inputType) => {
         return (
           <input
@@ -149,17 +147,14 @@ export default function RegisterForm() {
         onChange={handleChange}
         value={state.purpose}
       ></textarea>
-
       <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
         {loading ? "Loading..." : "Register"}
       </button>
-
       <Snackbar open={error.open} autoHideDuration={4000} onClose={closeError}>
         <Alert onClose={closeError} severity="error" sx={{ width: "100%" }}>
           {error.data}
         </Alert>
       </Snackbar>
-
       <Snackbar
         open={message.open}
         autoHideDuration={4000}
@@ -169,6 +164,10 @@ export default function RegisterForm() {
           {message.data}
         </Alert>
       </Snackbar>
+      <p className="text-center">
+        If you have registered before <br />
+        Just enter reg no, out time and purpose
+      </p>
     </form>
   );
 }

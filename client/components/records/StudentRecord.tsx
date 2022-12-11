@@ -28,7 +28,7 @@ export default function StudentRecord({ record, registeredStudents }: any) {
             );
 
             return (
-              <tr className="hover:bg-slate-100">
+              <tr key={d.student_id} className="hover:bg-slate-100">
                 <td className="border border-slate-300 p-2  ">
                   {student.reg_no}
                 </td>

@@ -27,7 +27,7 @@ export default function FacultyRecord({ record, registeredFaculties }: any) {
             );
 
             return (
-              <tr className="hover:bg-slate-100">
+              <tr key={d.faculty_id} className="hover:bg-slate-100">
                 <td className="border border-slate-300 p-2  ">
                   {faculty.faculty_id}
                 </td>

@@ -25,6 +25,7 @@ export default function StudentRecord(props: any) {
               <th className="border border-slate-300 p-2">Year</th>
 
               <th className="border border-slate-300 p-2">Purpose</th>
+              <th className="border border-slate-300 p-2">Status</th>
               <th className="border border-slate-300 p-2">Date</th>
               <th className="border border-slate-300 p-2">In time</th>
               <th className="border border-slate-300 p-2">Out time</th>
@@ -52,6 +53,7 @@ export default function StudentRecord(props: any) {
                     {student.year}
                   </td>
                   <td className="border border-slate-300 p-2  ">{d.purpose}</td>
+                  <td className="border border-slate-300 p-2  ">{d.status}</td>
                   <td className="border border-slate-300 p-2  ">{d.date}</td>
                   <td className="border border-slate-300 p-2  ">{d.in_time}</td>
                   <td className="border border-slate-300 p-2  ">

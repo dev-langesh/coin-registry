@@ -11,6 +11,7 @@ const initialState = {
   year: "",
   purpose: "",
   out_time: "",
+  status: "",
 };
 
 export default function RegisterForm() {
@@ -153,7 +154,7 @@ export default function RegisterForm() {
       })}
 
       <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
-        {loading ? "Loading..." : "Register"}
+        {loading ? "Loading..." : "Submit"}
       </button>
       <Snackbar open={error.open} autoHideDuration={4000} onClose={closeError}>
         <Alert onClose={closeError} severity="error" sx={{ width: "100%" }}>

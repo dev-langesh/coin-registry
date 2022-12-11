@@ -30,12 +30,14 @@ async function getFacultyRecords(req, res) {
 
   const data = await facultyRecord.find({ date: date.date });
 
-  return res.json(data);
+  return res.json(data.reverse());
 }
 
 // POST -> /records/filter-student
 async function filteredStudent(req, res) {
   const body = req.body;
+
+  console.log(req.body);
 
   const student = await Student.findOne(body);
 

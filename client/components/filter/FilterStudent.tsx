@@ -9,6 +9,14 @@ import {
 import { setStudentRecord } from "../../src/features/records/recordSlice";
 import { filterStudent, inputType } from "./filterOptions";
 
+// const initialState = {
+//   reg_no: "",
+//   name: "",
+//   department: "",
+//   year: "",
+//   date: "",
+// };
+
 export default function FilterStudent() {
   const [values, setValues] = useState<any>({});
   const [loading, setLoading] = useState<boolean>(false);
@@ -56,6 +64,24 @@ export default function FilterStudent() {
     closeFilter();
   };
 
+  const clearFilter = async () => {
+    setLoading(true);
+
+    setValues({});
+
+    const req = await axios.get(
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/students`
+    );
+
+    const data = await req.data;
+
+    setLoading(false);
+
+    dispatch(setStudentRecord(data));
+
+    closeFilter();
+  };
+
   const closeFilter = () => {
     dispatch(closeStudentFilter());
   };
@@ -95,8 +121,18 @@ export default function FilterStudent() {
             />
           );
         })}
-        <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
+        <button
+          type="submit"
+          className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
+        >
           {loading ? "Loading..." : "Apply"}
+        </button>{" "}
+        <button
+          type="button"
+          onClick={clearFilter}
+          className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
+        >
+          {loading ? "Loading..." : "Clear Filter"}
         </button>{" "}
       </form>
 

@@ -10,7 +10,7 @@ import { filterFaculty, inputType } from "./filterOptions";
 
 export default function FilterFaculty() {
   const [values, setValues] = useState<any>({});
-  const [loding, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const isOpen = useAppSelector(isFacultyFilterOpen);
 
@@ -48,6 +48,22 @@ export default function FilterFaculty() {
     dispatch(closeFacultyFilter());
   };
 
+  const clearFilter = async () => {
+    setLoading(true);
+
+    const req = await axios.get(
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/faculties`
+    );
+
+    const data = await req.data;
+
+    setLoading(false);
+
+    dispatch(setFacultyRecord(data));
+
+    closeFilter();
+  };
+
   return (
     <section>
       <div
@@ -76,8 +92,18 @@ export default function FilterFaculty() {
             />
           );
         })}
-        <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
-          {loding ? "Loading..." : "Apply"}
+        <button
+          type="submit"
+          className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
+        >
+          {loading ? "Loading..." : "Apply"}
+        </button>{" "}
+        <button
+          onClick={clearFilter}
+          type="button"
+          className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
+        >
+          {loading ? "Loading..." : "Clear Filter"}
         </button>{" "}
       </form>
     </section>

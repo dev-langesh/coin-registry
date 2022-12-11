@@ -59,8 +59,8 @@ export const filterFaculty = [
   },
   {
     id: 4,
-    name: "out_time",
+    name: "date",
     type: "text",
-    placeholder: "Out time (Eg. 1:10)",
+    placeholder: "Date (Eg.12-10-2022)",
   },
 ];

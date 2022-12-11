@@ -23,7 +23,7 @@ export default function Records({
     dispatch(setRegisteredFaculties(registeredFaculties));
     dispatch(setRegisteredStudents(registeredStudents));
     dispatch(setFacultyRecord(facultyRecord));
-  });
+  }, []);
 
   return (
     <section className="mt-20 p-4 space-y-5">

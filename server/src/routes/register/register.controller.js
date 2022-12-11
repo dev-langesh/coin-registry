@@ -44,6 +44,9 @@ async function register(req, res) {
         if (!body.name || !body.department) {
           throw new Error();
         }
+
+        body.department = body.department.toUpperCase();
+
         user = await Faculty.create(body);
       }
 

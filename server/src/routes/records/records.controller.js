@@ -20,32 +20,28 @@ async function registeredFaculties(req, res) {
 async function getStudentRecords(req, res) {
   const date = calculateDate();
 
-  const data = await studentRecord.find({ date: date.date });
-  return res.json(data.reverse());
+  const data = await studentRecord.find({ date: date.date }).sort({ _id: -1 });
+  return res.json(data);
 }
 
 // GET -> /records/faculties
 async function getFacultyRecords(req, res) {
   const date = calculateDate();
 
-  const data = await facultyRecord.find({ date: date.date });
+  const data = await facultyRecord.find({ date: date.date }).sort({ _id: -1 });
 
-  return res.json(data.reverse());
+  return res.json(data);
 }
 
 // POST -> /records/filter-student
 async function filteredStudent(req, res) {
   const body = req.body;
 
-  console.log(req.body);
-
   const student = await Student.findOne(body);
 
   if (!student) {
     return res.json({ error: "No records" });
   }
-
-  console.log(student);
 
   const data = await studentRecord.find({
     student_id: student._id,
@@ -65,14 +61,11 @@ async function filteredFaculty(req, res) {
     return res.json({ error: "No records" });
   }
 
-  console.log(faculty);
-
   const data = await facultyRecord.find({
     faculty_id: faculty._id,
     ...body,
   });
 
-  console.log(data);
   return res.json(data);
 }
 

@@ -47,6 +47,8 @@ async function register(req, res) {
 
           return res.json({ message: "Status updated" });
         }
+      } else if (!body.status) {
+        throw new Error("fill all the details");
       } else {
         const rec = await studentRecord.create({
           ...body,
@@ -97,16 +99,16 @@ async function register(req, res) {
 
           return res.json({ message: "Status updated" });
         }
+      } else if (!body.status) {
+        throw new Error("fill all the details");
+      } else {
+        const rec = await facultyRecord.create({
+          ...body,
+          ...today,
+          faculty_id: user._id,
+        });
+        res.json({ message: "Faculty registered" });
       }
-
-      const rec = await facultyRecord.create({
-        ...body,
-        ...today,
-        faculty_id: user._id,
-      });
-
-      // console.log(rec);
-      res.json({ message: "Faculty registered" });
     } else {
       throw new Error("fill all detaiils");
     }

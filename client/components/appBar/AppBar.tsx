@@ -25,9 +25,9 @@ export default function AppBar() {
         <Link href="/records">
           <Button text="Records" type="contained" />
         </Link>
-        <Link href="/events">
+        {/* <Link href="/events">
           <Button text="Events" type="outlined" />
-        </Link>
+        </Link> */}
       </section>
     </div>
   );

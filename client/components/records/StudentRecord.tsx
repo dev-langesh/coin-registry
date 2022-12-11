@@ -1,7 +1,15 @@
 import React from "react";
+import { useAppSelector } from "../../src/app/hooks";
+import {
+  getRegisteredStudents,
+  getStudentRecord,
+} from "../../src/features/records/recordSlice";
 import TableHeader from "./TableHeader";
 
-export default function StudentRecord({ record, registeredStudents }: any) {
+export default function StudentRecord(props: any) {
+  const record = useAppSelector(getStudentRecord);
+  const registeredStudents = useAppSelector(getRegisteredStudents);
+
   return (
     <section>
       <TableHeader title="Students" />

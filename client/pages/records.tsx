@@ -2,6 +2,13 @@ import { GetStaticProps } from "next";
 import React, { useEffect } from "react";
 import FacultyRecord from "../components/records/FacultyRecord";
 import StudentRecord from "../components/records/StudentRecord";
+import { useAppDispatch } from "../src/app/hooks";
+import {
+  setFacultyRecord,
+  setRegisteredFaculties,
+  setRegisteredStudents,
+  setStudentRecord,
+} from "../src/features/records/recordSlice";
 
 export default function Records({
   studentRecord,
@@ -9,6 +16,15 @@ export default function Records({
   registeredFaculties,
   facultyRecord,
 }: any) {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(setStudentRecord(studentRecord));
+    dispatch(setRegisteredFaculties(registeredFaculties));
+    dispatch(setRegisteredStudents(registeredStudents));
+    dispatch(setFacultyRecord(facultyRecord));
+  });
+
   return (
     <section className="mt-20 p-4 space-y-5">
       <StudentRecord
@@ -52,5 +68,6 @@ export const getStaticProps: GetStaticProps = async () => {
       registeredStudents,
       registeredFaculties,
     },
+    revalidate: 5,
   };
 };

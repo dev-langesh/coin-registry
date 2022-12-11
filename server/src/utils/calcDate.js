@@ -9,7 +9,10 @@ function calculateDate() {
   const date = `${dt}-${m}-${y}`;
 
   // calc current time
-  const hr = Math.floor(d.getHours() / 2);
+  let hr = d.getHours();
+
+  hr = hr % 12 || 12;
+
   const min = d.getMinutes();
 
   const in_time = `${hr}:${min}`;

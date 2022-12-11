@@ -24,9 +24,9 @@ const facultyRecordSchema = mongoose.Schema(
       ref: "faculty",
       required: true,
     },
-    purpose: String,
+    purpose: { type: String, required: true },
     in_time: String,
-    out_time: String,
+    out_time: { type: String, required: true },
     date: String,
   },
   {

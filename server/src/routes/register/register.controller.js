@@ -40,7 +40,7 @@ async function register(req, res) {
       let user = await Faculty.findOne({ faculty_id: body.faculty_id });
 
       if (!user) {
-        if (!body.name || !body.department || !body.year) {
+        if (!body.name || !body.department) {
           throw new Error();
         }
         user = await Faculty.create(body);

@@ -1,11 +1,15 @@
 const {
   getStudentRecords,
   getFacultyRecords,
+  registeredStudents,
+  registeredFaculties,
 } = require("./records.controller");
 
-const recordRouter = require("express").Router();
+const router = require("express").Router();
 
-recordRouter.get("/students", getStudentRecords);
-recordRouter.get("/faculties", getFacultyRecords);
+router.get("/students", getStudentRecords);
+router.get("/faculties", getFacultyRecords);
+router.get("/registered-students/", registeredStudents);
+router.get("/registered-faculties/", registeredFaculties);
 
-module.exports = { recordRouter };
+module.exports = { recordRouter: router };

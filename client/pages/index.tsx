@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-screen flex items-center justify-center mt-36 space-x-16">
+      <main className="w-screen flex items-center justify-center mt-20 space-x-16">
         <Instructions
           title="Instruction"
           text="If you have already registered don't need to enter name,dep,reg num again"

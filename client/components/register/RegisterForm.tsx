@@ -100,7 +100,7 @@ export default function RegisterForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col space-y-6 shadow-2xl rounded-md p-6"
+      className="flex flex-col space-y-6 shadow-2xl rounded-md p-6 mb-10"
     >
       <h1 className="text-center text-3xl text-blue-500 font-bold">Register</h1>
       <section className="flex items-center justify-around">

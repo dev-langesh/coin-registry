@@ -8,12 +8,12 @@ export default function Button({
   type: "outlined" | "contained";
 }) {
   const [style, setStyle] = useState(
-    "bg-white p-2 text-blue-500 hover:bg-blue-500 hover:text-white"
+    "bg-white p-1 text-blue-500 hover:bg-blue-500 hover:text-white"
   );
 
   useEffect(() => {
     if (type == "outlined") {
-      setStyle("border-white p-2 hover:bg-white hover:text-blue-500");
+      setStyle("border-white p-1 hover:bg-white hover:text-blue-500");
     }
   }, [type]);
   return (

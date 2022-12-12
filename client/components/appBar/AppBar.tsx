@@ -5,7 +5,7 @@ import Button from "./Button";
 
 export default function AppBar() {
   return (
-    <div className="bg-blue-500 text-white p-6 flex justify-between items-center relative">
+    <div className="bg-blue-500 text-white px-6 py-4 flex justify-between items-center relative">
       <span className="text-2xl font-bold">Coin Registery</span>
 
       <div className="bg-white rounded-full p-2 absolute -bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-6">

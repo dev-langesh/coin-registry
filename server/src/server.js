@@ -1,4 +1,4 @@
-const http = require("node:http");
+const http = require("http");
 const { app } = require("./app");
 const { connectDb } = require("./config/connectDb");
 const { configEnv } = require("./config/envConf");

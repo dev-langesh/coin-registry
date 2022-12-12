@@ -143,6 +143,7 @@ export default function RegisterForm() {
                 id="purpose"
                 cols={30}
                 rows={5}
+                value={state.purpose}
                 placeholder="Purpose"
                 onChange={handleChange}
                 key={100}

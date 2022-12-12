@@ -62,6 +62,6 @@ export const getStaticProps: GetStaticProps = async () => {
       registeredStudents,
       registeredFaculties,
     },
-    revalidate: 5,
+    revalidate: 3,
   };
 };

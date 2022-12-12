@@ -127,11 +127,10 @@ export default function RegisterForm() {
       </section>
       {inputs.map((input: inputType) => {
         return (
-          <>
+          <div key={input.id} className="space-y-6 flex flex-col">
             <input
               className="border px-4 py-2"
               onChange={handleChange}
-              key={input.id}
               name={input.name}
               value={state[input.name]}
               placeholder={input.placeholder}
@@ -146,10 +145,10 @@ export default function RegisterForm() {
                 rows={5}
                 placeholder="Purpose"
                 onChange={handleChange}
-                value={state.purpose}
+                key={100}
               ></textarea>
             )}
-          </>
+          </div>
         );
       })}
 

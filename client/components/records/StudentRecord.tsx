@@ -15,8 +15,8 @@ export default function StudentRecord(props: any) {
     <section>
       <TableHeader title="Students" />
 
-      <div className="max-h-80 overflow-auto shadow-md">
-        <table className="table table-auto border-collapse w-full ">
+      <div className="max-h-80  overflow-auto shadow-md">
+        <table className="table table-fixed border-collapse w-full ">
           <thead>
             <tr>
               <th className="border border-slate-300 p-2">Reg No</th>

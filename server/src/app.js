@@ -7,7 +7,7 @@ const { recordRouter } = require("./routes/records/records.route");
 const app = express();
 
 // configure cors
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

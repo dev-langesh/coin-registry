@@ -7,9 +7,9 @@ export default async function record(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-  const student = await Student.find({});
+  const students = await Student.find({});
 
-  const faculty = await Faculty.find({});
+  const faculties = await Faculty.find({});
 
   const date = calculateDate();
 
@@ -22,8 +22,8 @@ export default async function record(
     .sort({ _id: -1 });
 
   const data = {
-    student,
-    faculty,
+    students,
+    faculties,
     studentRec,
     facultyRec,
   };

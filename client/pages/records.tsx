@@ -34,33 +34,19 @@ export default function Records({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const srecordReq = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/records/students`
-  );
+  console.log(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`);
+  const req = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`);
 
-  const studentReq = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/records/registered-students`
-  );
+  const data = await req.json();
 
-  const fReq = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/records/registered-faculties`
-  );
-
-  const frecordReq = await fetch(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/records/faculties`
-  );
-
-  const studentRecord = await srecordReq.json();
-  const registeredStudents = await studentReq.json();
-  const registeredFaculties = await fReq.json();
-  const facultyRecord = await frecordReq.json();
+  console.log(data);
 
   return {
     props: {
-      studentRecord,
-      facultyRecord,
-      registeredStudents,
-      registeredFaculties,
+      studentRecord: data.studentRec,
+      facultyRecord: data.facultyRec,
+      registeredStudents: data.students,
+      registeredFaculties: data.faculties,
     },
     revalidate: 3,
   };

@@ -62,7 +62,7 @@ export default function RegisterForm() {
     console.log(state);
 
     const req = await axios.post(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/user/register`,
+      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/register`,
       state
     );
 

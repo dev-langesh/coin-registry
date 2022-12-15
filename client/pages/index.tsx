@@ -1,7 +1,9 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import AppBar from "../components/appBar/AppBar";
 import Instructions from "../components/register/Instructions";
 import RegisterForm from "../components/register/RegisterForm";
+import { connectDb } from "../server/config/connectDb";
 
 export default function Home() {
   return (
@@ -26,3 +28,10 @@ export default function Home() {
     </div>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  connectDb();
+  return {
+    props: {},
+  };
+};

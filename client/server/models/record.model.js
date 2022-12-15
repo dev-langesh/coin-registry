@@ -36,7 +36,11 @@ const facultyRecordSchema = mongoose.Schema(
   }
 );
 
-const studentRecord = mongoose.model("student-record", studentRecordSchema);
-const facultyRecord = mongoose.model("faculty-record", facultyRecordSchema);
+const studentRecord =
+  mongoose.models.studentRecord ||
+  mongoose.model("studentRecord", studentRecordSchema);
+const facultyRecord =
+  mongoose.models.facultyRecord ||
+  mongoose.model("facultyRecord", facultyRecordSchema);
 
 module.exports = { studentRecord, facultyRecord };

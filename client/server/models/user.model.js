@@ -23,7 +23,7 @@ const facultySchema = mongoose.Schema(
   }
 );
 
-export const Student = mongoose.model("student", studentSchema);
-export const Faculty = mongoose.model("faculty", facultySchema);
-
-// module.exports = { Student, Faculty };
+export const Student =
+  mongoose.models.student || mongoose.model("student", studentSchema);
+export const Faculty =
+  mongoose.models.faculty || mongoose.model("faculty", facultySchema);

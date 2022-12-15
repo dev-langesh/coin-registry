@@ -1,9 +1,4 @@
-const mongoose = require("mongoose");
-const { configEnv } = require("./envConf");
-
-import mongoose from "";
-
-configEnv("../../.env");
+import mongoose from "mongoose";
 
 const URI = process.env.MONGO_URI;
 

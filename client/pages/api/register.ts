@@ -1,7 +1,8 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { Faculty, Student } from "../../../server/models/user.model";
-import {} from "../../../server/";
+import { Faculty, Student } from "../../server/models/user.model";
+import { facultyRecord, studentRecord } from "../../server/models/record.model";
+import { calculateDate } from "../../server/utils/calcDate";
+
 type Data = {
   error?: String;
   message?: String;
@@ -11,7 +12,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  // res.status(200).json({ name: 'John Doe' })
+  // res.status(200).json({ message: "John Doe" });
+
+  console.log("hello");
 
   if (req.method == "POST") {
     const body = req.body;

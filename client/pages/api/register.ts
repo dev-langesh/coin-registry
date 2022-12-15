@@ -12,10 +12,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  // res.status(200).json({ message: "John Doe" });
-
-  console.log("hello");
-
   if (req.method == "POST") {
     const body = req.body;
 

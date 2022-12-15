@@ -43,10 +43,7 @@ export default function FilterStudent() {
 
     setLoading(true);
 
-    const req = await axios.post(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/filter-student`,
-      values
-    );
+    const req = await axios.post(`/api/filter-student`, values);
 
     const data = await req.data;
 
@@ -69,9 +66,7 @@ export default function FilterStudent() {
 
     setValues({});
 
-    const req = await axios.get(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/students`
-    );
+    const req = await axios.get(`/api/students`);
 
     const data = await req.data;
 

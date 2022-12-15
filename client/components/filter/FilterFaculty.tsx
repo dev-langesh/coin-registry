@@ -30,10 +30,7 @@ export default function FilterFaculty() {
 
     setLoading(true);
 
-    const req = await axios.post(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/filter-faculty`,
-      values
-    );
+    const req = await axios.post(`/api/filter-faculty`, values);
 
     const data = await req.data;
 
@@ -51,9 +48,7 @@ export default function FilterFaculty() {
   const clearFilter = async () => {
     setLoading(true);
 
-    const req = await axios.get(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/records/faculties`
-    );
+    const req = await axios.get(`/api/faculties`);
 
     const data = await req.data;
 

@@ -1,8 +1,10 @@
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import React, { useEffect } from "react";
 import FacultyRecord from "../components/records/FacultyRecord";
 import StudentRecord from "../components/records/StudentRecord";
+import { connectDb } from "../server/config/connectDb";
 import { useAppDispatch } from "../src/app/hooks";
+import axios from "axios";
 import {
   setFacultyRecord,
   setRegisteredFaculties,
@@ -33,13 +35,14 @@ export default function Records({
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  console.log(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`);
-  const req = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`);
+export const getServerSideProps: GetServerSideProps = async () => {
+  connectDb();
 
-  const data = await req.json();
+  const req = await axios.get(
+    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`
+  );
 
-  console.log(data);
+  const data = await req.data;
 
   return {
     props: {
@@ -48,6 +51,5 @@ export const getStaticProps: GetStaticProps = async () => {
       registeredStudents: data.students,
       registeredFaculties: data.faculties,
     },
-    revalidate: 3,
   };
 };

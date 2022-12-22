@@ -7,6 +7,8 @@ export default async function getFacultyRecords(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  connectDb();
+
   const date = calculateDate();
 
   const data = await facultyRecord.find({ date: date.date }).sort({ _id: -1 });

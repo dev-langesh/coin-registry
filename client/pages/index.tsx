@@ -27,10 +27,3 @@ export default function Home() {
     </div>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  connectDb();
-  return {
-    props: {},
-  };
-};

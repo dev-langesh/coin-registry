@@ -1,10 +1,31 @@
-import { GetServerSideProps } from "next";
+import axios from "axios";
 import Head from "next/head";
-import Instructions from "../components/register/Instructions";
+import { useEffect, useRef, useState } from "react";
 import RegisterForm from "../components/register/RegisterForm";
-import { connectDb } from "../server/config/connectDb";
 
 export default function Home() {
+  const isExecuted = useRef(false);
+  const svgContainer = useRef<any>(null);
+
+  async function getCode() {
+    const req = await axios.get("/api/register/generate-qr-code");
+
+    const data = req.data;
+
+    svgContainer.current.innerHTML = data.svg;
+
+    isExecuted.current = true;
+  }
+
+  useEffect(() => {
+    if (!isExecuted.current) {
+      getCode();
+      setInterval(() => {
+        getCode();
+      }, 1000 * 60);
+    }
+  }, []);
+
   return (
     <div className="">
       <Head>
@@ -14,6 +35,12 @@ export default function Home() {
       </Head>
 
       <main className="w-screen flex items-center justify-center mt-20 space-x-16">
+        {/* qrcode  */}
+        <section className="absolute top-16 left-6 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
+          <div ref={svgContainer} className=" w-40 h-40"></div>
+          <p className="">Scan and Register</p>
+        </section>
+
         <RegisterForm />
       </main>
     </div>

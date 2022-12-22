@@ -1,8 +1,4 @@
-import { GetServerSideProps, GetStaticProps } from "next";
 import React, { useEffect, useRef, useState } from "react";
-import FacultyRecord from "../components/records/FacultyRecord";
-import StudentRecord from "../components/records/StudentRecord";
-import { connectDb } from "../server/config/connectDb";
 import { useAppDispatch } from "../src/app/hooks";
 import axios from "axios";
 import {
@@ -12,13 +8,7 @@ import {
   setStudentRecord,
 } from "../src/features/records/recordSlice";
 import { CircularProgress } from "@mui/material";
-
-// {
-//   studentRecord,
-//   registeredStudents,
-//   registeredFaculties,
-//   facultyRecord,
-// }: any
+import Record from "../components/records/Record";
 
 export default function Records() {
   const dispatch = useAppDispatch();
@@ -34,7 +24,6 @@ export default function Records() {
       const data = await req.data;
       setLoading(false);
 
-      console.log(data);
       dispatch(setStudentRecord(data.studentRec));
       dispatch(setRegisteredFaculties(data.faculties));
       dispatch(setRegisteredStudents(data.students));
@@ -49,34 +38,17 @@ export default function Records() {
   }, []);
 
   return (
-    <section className="mt-20 p-4 space-y-5 ">
+    <section className=" md:mt-20 p-4 space-y-5 ">
       {loading ? (
         <div className="flex w-full items-center justify-center">
           <CircularProgress />
         </div>
       ) : (
         <>
-          <StudentRecord />
-          <FacultyRecord />
+          <Record type="Student" />
+          <Record type="Faculty" />
         </>
       )}
     </section>
   );
 }
-
-// export const getServerSideProps: GetServerSideProps = async () => {
-//   connectDb();
-
-//   const req = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`);
-
-//   const data = await req.json();
-
-//   return {
-//     props: {
-//       studentRecord: data.studentRec,
-//       facultyRecord: data.facultyRec,
-//       registeredStudents: data.students,
-//       registeredFaculties: data.faculties,
-//     },
-//   };
-// };

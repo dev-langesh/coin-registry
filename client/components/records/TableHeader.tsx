@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { useAppDispatch } from "../../src/app/hooks";
 import {
@@ -26,13 +27,15 @@ export default function TableHeader({
       <FilterStudent />
       <FilterFaculty />
       <div className="py-4 flex justify-between items-center">
-        <span className="text-2xl font-semibold text-blue-500">{title}</span>
-        <button
+        <span className="text-xl font-semibold text-blue-500">{title}</span>
+        <Button
+          variant="contained"
+          size="small"
           onClick={openFilter}
-          className="bg-blue-500 rounded p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide  transition-all duration-200"
+          className="bg-blue-500 rounded p-2 font-bold  text-white hover:bg-blue-600 tracking-wide  transition-all duration-200"
         >
           Filter
-        </button>
+        </Button>
       </div>
     </>
   );

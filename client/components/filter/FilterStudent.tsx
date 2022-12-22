@@ -125,7 +125,7 @@ export default function FilterStudent() {
         <button
           type="button"
           onClick={clearFilter}
-          className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
+          className="bg-blue-500 p-2 font-bold  text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
         >
           {loading ? "Loading..." : "Clear Filter"}
         </button>{" "}

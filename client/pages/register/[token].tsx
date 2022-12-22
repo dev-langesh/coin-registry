@@ -15,14 +15,16 @@ export default function Register() {
     setLoading(true);
     const token = router.query.token;
 
-    const req = await axios.get(`/api/register/verify/${token}`);
+    if (token) {
+      const req = await axios.get(`/api/register/verify/${token}`);
 
-    const data = req.data;
+      const data = req.data;
 
-    setLoading(false);
+      setLoading(false);
 
-    if (data.error) {
-      setError(true);
+      if (data.error) {
+        setError(true);
+      }
     }
   }
 
@@ -30,9 +32,11 @@ export default function Register() {
     if (!isExecuted.current) {
       verifyToken();
 
-      isExecuted.current = true;
+      if (router.query.token) {
+        isExecuted.current = true;
+      }
     }
-  }, [router.query.token]);
+  }, [router.query]);
 
   return (
     <main className="w-screen flex items-center justify-center mt-20 space-x-16">

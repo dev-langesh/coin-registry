@@ -22,7 +22,7 @@ export default function Home() {
       getCode();
       setInterval(() => {
         getCode();
-      }, 1000 * 60);
+      }, 1000 * 60 * 60 * 12);
     }
   }, []);
 

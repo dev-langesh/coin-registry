@@ -7,6 +7,7 @@ import {
   isStudentFilterOpen,
 } from "../../src/features/filter/filterSlice";
 import { setStudentRecord } from "../../src/features/records/recordSlice";
+import Button from "./Button";
 import { filterStudent, inputType } from "./filterOptions";
 
 // const initialState = {
@@ -109,26 +110,22 @@ export default function FilterStudent() {
             <input
               onChange={handleChange}
               value={values[f.name]}
-              className="border p-2"
+              className="border p-2 text-sm"
               key={f.id}
               {...f}
               id={`${f.id}`}
             />
           );
         })}
-        <button
-          type="submit"
-          className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
-        >
-          {loading ? "Loading..." : "Apply"}
-        </button>{" "}
-        <button
+
+        <Button type="submit" loading={loading} text="Apply" />
+
+        <Button
           type="button"
-          onClick={clearFilter}
-          className="bg-blue-500 p-2 font-bold  text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200"
-        >
-          {loading ? "Loading..." : "Clear Filter"}
-        </button>{" "}
+          loading={loading}
+          text="Clear Filters"
+          clickHandler={clearFilter}
+        />
       </form>
 
       <Snackbar open={error.open} autoHideDuration={4000} onClose={closeError}>

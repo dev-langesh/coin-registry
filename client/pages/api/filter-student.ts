@@ -7,8 +7,6 @@ export default async function filteredStudent(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  connectDb();
-
   const body = req.body;
 
   const student = await Student.findOne(body);

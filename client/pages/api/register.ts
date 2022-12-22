@@ -13,8 +13,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  connectDb();
-
   if (req.method == "POST") {
     const body = req.body;
 

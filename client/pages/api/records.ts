@@ -8,8 +8,6 @@ export default async function record(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-  connectDb();
-
   const students = await Student.find({});
 
   const faculties = await Faculty.find({});

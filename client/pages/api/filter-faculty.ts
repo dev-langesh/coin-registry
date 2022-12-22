@@ -7,7 +7,6 @@ export default async function filteredFaculty(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  connectDb();
   const body = req.body;
 
   const faculty = await Faculty.findOne(body);

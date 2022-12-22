@@ -12,21 +12,23 @@ import {
   setStudentRecord,
 } from "../src/features/records/recordSlice";
 
-export default function Records({
-  studentRecord,
-  registeredStudents,
-  registeredFaculties,
-  facultyRecord,
-}: any) {
+// {
+//   studentRecord,
+//   registeredStudents,
+//   registeredFaculties,
+//   facultyRecord,
+// }: any
+
+export default function Records() {
   const dispatch = useAppDispatch();
 
-  useEffect(() => {
-    console.log(studentRecord);
-    dispatch(setStudentRecord(studentRecord));
-    dispatch(setRegisteredFaculties(registeredFaculties));
-    dispatch(setRegisteredStudents(registeredStudents));
-    dispatch(setFacultyRecord(facultyRecord));
-  }, []);
+  // useEffect(() => {
+  //   console.log(studentRecord);
+  //   dispatch(setStudentRecord(studentRecord));
+  //   dispatch(setRegisteredFaculties(registeredFaculties));
+  //   dispatch(setRegisteredStudents(registeredStudents));
+  //   dispatch(setFacultyRecord(facultyRecord));
+  // }, []);
 
   return (
     <section className="mt-20 p-4 space-y-5">
@@ -36,21 +38,19 @@ export default function Records({
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  connectDb();
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   connectDb();
 
-  const req = await axios.get(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`
-  );
+//   const req = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/records`);
 
-  const data = await req.data;
+//   const data = await req.json();
 
-  return {
-    props: {
-      studentRecord: data.studentRec,
-      facultyRecord: data.facultyRec,
-      registeredStudents: data.students,
-      registeredFaculties: data.faculties,
-    },
-  };
-};
+//   return {
+//     props: {
+//       studentRecord: data.studentRec,
+//       facultyRecord: data.facultyRec,
+//       registeredStudents: data.students,
+//       registeredFaculties: data.faculties,
+//     },
+//   };
+// };

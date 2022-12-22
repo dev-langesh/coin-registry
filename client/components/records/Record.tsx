@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { studentRecord } from "../../server/models/record.model";
 import { useAppSelector } from "../../src/app/hooks";
 
 import {
@@ -11,24 +12,26 @@ import { facultyInputs, studentInputs } from "./inputData";
 import TableHeader from "./TableHeader";
 
 export default function Record({ type }: { type: "Student" | "Faculty" }) {
-  let users: any;
-  let records: any;
-
   const [inputs, setInputs] = useState<string[]>([]);
+  const [users, setUsers] = useState<any>([]);
+  const [records, setRecords] = useState<any>([]);
 
-  if (type === "Student") {
-    records = useAppSelector(getStudentRecord);
-    users = useAppSelector(getRegisteredStudents);
-  } else {
-    records = useAppSelector(getFacultyRecord);
-    users = useAppSelector(getRegisteredFaculties);
-  }
+  const studentRecords = useAppSelector(getStudentRecord);
+  const students = useAppSelector(getRegisteredStudents);
+  const facultyRecords = useAppSelector(getFacultyRecord);
+  const faculties = useAppSelector(getRegisteredFaculties);
+
+  let id = 0;
 
   useEffect(() => {
     if (type == "Student") {
       setInputs(studentInputs);
+      setUsers(students);
+      setRecords(studentRecords);
     } else {
       setInputs(facultyInputs);
+      setUsers(faculties);
+      setRecords(facultyRecords);
     }
   }, []);
 
@@ -41,7 +44,11 @@ export default function Record({ type }: { type: "Student" | "Faculty" }) {
           <thead>
             <tr>
               {inputs.map((text: String) => {
-                return <th className="border border-slate-300 p-2">{text}</th>;
+                return (
+                  <th key={id++} className="border border-slate-300 p-2">
+                    {text}
+                  </th>
+                );
               })}
             </tr>
           </thead>

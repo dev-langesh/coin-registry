@@ -10,15 +10,11 @@ import { setStudentRecord } from "../../src/features/records/recordSlice";
 import Button from "./Button";
 import { filterStudent, inputType } from "./filterOptions";
 
-// const initialState = {
-//   reg_no: "",
-//   name: "",
-//   department: "",
-//   year: "",
-//   date: "",
-// };
-
-export default function FilterStudent() {
+export default function Filter({
+  variant,
+}: {
+  variant: "student" | "faculty";
+}) {
   const [values, setValues] = useState<any>({});
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<{ open: boolean; data: string }>({
@@ -98,7 +94,6 @@ export default function FilterStudent() {
         } absolute bg-black/30 w-screen h-screen top-0 left-0 `}
       ></div>
       <form
-        onSubmit={handleSubmit}
         className={`${
           isOpen ? "" : "hidden"
         } absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white flex flex-col p-4 shadow-black/20 shadow-xl rounded space-y-4`}
@@ -117,9 +112,12 @@ export default function FilterStudent() {
             />
           );
         })}
-
-        <Button type="submit" loading={loading} text="Apply" />
-
+        <Button
+          type="submit"
+          loading={loading}
+          text="Apply"
+          clickHandler={handleSubmit}
+        />
         <Button
           type="button"
           loading={loading}

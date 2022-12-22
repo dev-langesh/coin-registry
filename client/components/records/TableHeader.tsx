@@ -6,7 +6,7 @@ import {
   openStudentFilter,
 } from "../../src/features/filter/filterSlice";
 import FilterFaculty from "../filter/FilterFaculty";
-import FilterStudent from "../filter/FilterStudent";
+import Filter from "../filter/Filter";
 
 export default function TableHeader({
   title,
@@ -24,7 +24,7 @@ export default function TableHeader({
   };
   return (
     <>
-      <FilterStudent />
+      <Filter variant="student" />
       <FilterFaculty />
       <div className="py-4 flex justify-between items-center">
         <span className="text-xl font-semibold text-blue-500">{title}</span>

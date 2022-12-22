@@ -1,11 +1,13 @@
 import axios from "axios";
 import Head from "next/head";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import RegisterForm from "../components/register/RegisterForm";
 
 export default function Home() {
   const isExecuted = useRef(false);
   const svgContainer = useRef<any>(null);
+  const [auth, setAuth] = useState<boolean>(false);
+  const [pass, setPass] = useState<string>("");
 
   async function getCode() {
     const req = await axios.get("/api/register/generate-qr-code");
@@ -13,18 +15,31 @@ export default function Home() {
     const data = req.data;
 
     svgContainer.current.innerHTML = data.svg;
-
-    isExecuted.current = true;
   }
 
   useEffect(() => {
     if (!isExecuted.current) {
-      getCode();
-      setInterval(() => {
+      if (auth) {
         getCode();
-      }, 1000 * 60 * 60 * 12);
+        setInterval(() => {
+          getCode();
+        }, 1000 * 60 * 60 * 12);
+        isExecuted.current = true;
+      }
     }
-  }, []);
+  }, [auth]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPass(e.target.value);
+  };
+
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+
+    if (pass === "admin@coin") {
+      setAuth(true);
+    }
+  };
 
   return (
     <div className="">
@@ -36,12 +51,27 @@ export default function Home() {
 
       <main className="w-screen flex items-center justify-center mt-20 space-x-16">
         {/* qrcode  */}
-        <section className="absolute top-16 left-6 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
-          <div ref={svgContainer} className=" w-40 h-40"></div>
-          <p className="">Scan and Register</p>
-        </section>
+        {auth ? (
+          <>
+            <section className="absolute top-16 left-6 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
+              <div ref={svgContainer} className=" w-40 h-40"></div>
+              <p className="">Scan and Register</p>
+            </section>
 
-        <RegisterForm />
+            <RegisterForm />
+          </>
+        ) : (
+          <section className="p-4 shadow-lg mb-6">
+            <form onSubmit={handleSubmit}>
+              <input
+                onChange={handleChange}
+                className="border py-1 px-2"
+                placeholder="Password"
+                type="password"
+              />
+            </form>
+          </section>
+        )}
       </main>
     </div>
   );

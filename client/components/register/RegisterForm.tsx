@@ -2,6 +2,7 @@ import { Alert, Radio, Snackbar } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { registerStudent, inputType, registerFaculty } from "./register.type";
 import axios from "axios";
+import { format } from "date-fns";
 
 const initialState = {
   user: "student",
@@ -11,6 +12,8 @@ const initialState = {
   year: "",
   purpose: "",
   out_time: "",
+  in_time: "",
+  date: "",
   status: "",
 };
 
@@ -59,7 +62,11 @@ export default function RegisterForm() {
 
     setLoading(true);
 
-    console.log(state);
+    const date = format(new Date(), "dd-MM-yyyy");
+    const in_time = format(new Date(), "hh:mm");
+
+    state.date = date;
+    state.in_time = in_time;
 
     const req = await axios.post(`/api/register`, state);
 

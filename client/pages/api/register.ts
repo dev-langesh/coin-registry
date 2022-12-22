@@ -36,8 +36,6 @@ export default async function handler(
           user = await Student.create(body);
         }
 
-        const today = calculateDate();
-
         if (!body.purpose && !body.out_time) {
           if (!body.status) {
             throw new Error("fill all details");
@@ -64,7 +62,6 @@ export default async function handler(
         } else {
           const rec = await studentRecord.create({
             ...body,
-            ...today,
             student_id: user._id,
           });
         }
@@ -87,8 +84,6 @@ export default async function handler(
 
           user = await Faculty.create(body);
         }
-
-        const today = calculateDate();
 
         if (!body.purpose && !body.out_time) {
           if (!body.status) {
@@ -116,7 +111,6 @@ export default async function handler(
         } else {
           const rec = await facultyRecord.create({
             ...body,
-            ...today,
             faculty_id: user._id,
           });
           res.json({ message: "Faculty registered" });

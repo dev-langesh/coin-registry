@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { connectDb } from "../../../server/config/connectDb";
-import { Token } from "../../../server/models/token.model";
+import { connectDb } from "../../../../server/config/connectDb";
+import { Token } from "../../../../server/models/token.model";
 
 export default async function verifyToken(
   req: NextApiRequest,

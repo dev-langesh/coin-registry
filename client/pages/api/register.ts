@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Faculty, Student } from "../../server/models/user.model";
 import { facultyRecord, studentRecord } from "../../server/models/record.model";
-import { calculateDate } from "../../server/utils/calcDate";
 import { connectDb } from "../../server/config/connectDb";
 
 type Data = {
@@ -64,6 +63,8 @@ export default async function handler(
             ...body,
             student_id: user._id,
           });
+
+          console.log(rec);
         }
 
         // console.log(rec);

@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { connectDb } from "../../server/config/connectDb";
 import { facultyRecord, studentRecord } from "../../server/models/record.model";
 import { Faculty, Student } from "../../server/models/user.model";
-import { calculateDate } from "../../server/utils/calcDate";
+import { format } from "date-fns";
 
 export default async function record(
   req: NextApiRequest,
@@ -10,19 +10,15 @@ export default async function record(
 ) {
   connectDb();
 
+  const date = format(new Date(), "dd-MM-yyyy");
+
   const students = await Student.find({});
 
   const faculties = await Faculty.find({});
 
-  const date = calculateDate();
+  const studentRec = await studentRecord.find({ date }).sort({ _id: -1 });
 
-  const studentRec = await studentRecord
-    .find({ date: date.date })
-    .sort({ _id: -1 });
-
-  const facultyRec = await facultyRecord
-    .find({ date: date.date })
-    .sort({ _id: -1 });
+  const facultyRec = await facultyRecord.find({ date }).sort({ _id: -1 });
 
   const data = {
     students,

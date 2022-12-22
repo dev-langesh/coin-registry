@@ -14,7 +14,7 @@ const studentRecordSchema = mongoose.Schema(
     status: String,
   },
   {
-    collection: "student record",
+    collection: "student-record",
   }
 );
 
@@ -32,7 +32,7 @@ const facultyRecordSchema = mongoose.Schema(
     status: String,
   },
   {
-    collection: "faculty record",
+    collection: "faculty-record",
   }
 );
 

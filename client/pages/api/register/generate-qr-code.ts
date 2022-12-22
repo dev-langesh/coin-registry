@@ -24,6 +24,8 @@ export default async function generateCode(
     await Token.findByIdAndUpdate(id, { $set: { token } });
   }
 
+  console.log(token);
+
   qrcode.toString(
     `${process.env.NEXT_PUBLIC_SERVER_URL}/register/${token}`,
     { type: "svg" },

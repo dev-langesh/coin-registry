@@ -53,9 +53,12 @@ export default function Home() {
         {/* qrcode  */}
         {auth ? (
           <>
-            <section className="absolute top-16 left-6 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
+            <section className=" w-52 text-center fixed top-1/2 -translate-y-1/2 right-16 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
+              <h1 className="text-blue-500 font-bold ">QR code</h1>
               <div ref={svgContainer} className=" w-40 h-40"></div>
-              <p className="">Scan and Register</p>
+              <p className="break-words">
+                If you registered before no need to enter name, dep, year
+              </p>
             </section>
 
             <RegisterForm />

@@ -22,6 +22,7 @@ export default function Records() {
       const req = await axios.get(`/api/records`);
 
       const data = await req.data;
+
       setLoading(false);
 
       dispatch(setStudentRecord(data.studentRec));

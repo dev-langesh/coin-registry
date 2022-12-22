@@ -33,4 +33,6 @@ export default function AppBar() {
         </section>
       </div>
     );
+
+  return <></>;
 }

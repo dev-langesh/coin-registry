@@ -14,15 +14,7 @@ export default function Home() {
       </Head>
 
       <main className="w-screen flex items-center justify-center mt-20 space-x-16">
-        <Instructions
-          title="Instruction"
-          text="If you have already registered don't need to enter name,dep,reg num again"
-        />
         <RegisterForm />
-        <Instructions
-          title="Modify Status"
-          text="If you want to modify the status enter your reg no or faculty id and the status"
-        />
       </main>
     </div>
   );

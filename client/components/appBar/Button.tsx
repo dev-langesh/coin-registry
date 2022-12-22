@@ -17,7 +17,7 @@ export default function Button({
     }
   }, [type]);
   return (
-    <span className={`border ${style} transition-all duration-300`}>
+    <span className={`border ${style} transition-all duration-300 `}>
       {text}
     </span>
   );

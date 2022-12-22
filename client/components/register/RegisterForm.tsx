@@ -99,8 +99,8 @@ export default function RegisterForm() {
       onSubmit={handleSubmit}
       className="flex flex-col space-y-6 shadow-2xl rounded-md p-6 mb-10"
     >
-      <h1 className="text-center text-3xl text-blue-500 font-bold">Register</h1>
-      <section className="flex items-center justify-around">
+      <h1 className="text-center text-2xl text-blue-500 font-bold">Register</h1>
+      <section className="flex items-center justify-around text-md">
         <div className="flex items-center">
           <Radio
             checked={state?.user === "student"}
@@ -126,7 +126,7 @@ export default function RegisterForm() {
         return (
           <div key={input.id} className="space-y-6 flex flex-col">
             <input
-              className="border px-4 py-2"
+              className="border px-4 py-2 text-sm"
               onChange={handleChange}
               name={input.name}
               value={state[input.name]}
@@ -135,7 +135,7 @@ export default function RegisterForm() {
             />
             {input.name === "out_time" && (
               <textarea
-                className="border px-4 py-2"
+                className="border px-4 py-2 text-sm"
                 name="purpose"
                 id="purpose"
                 cols={30}
@@ -150,7 +150,7 @@ export default function RegisterForm() {
         );
       })}
 
-      <button className="bg-blue-500 p-2 font-bold text-xl text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
+      <button className="bg-blue-500 p-2 font-bold  text-white hover:bg-blue-600 tracking-wide hover:tracking-widest transition-all duration-200">
         {loading ? "Loading..." : "Submit"}
       </button>
       <Snackbar open={error.open} autoHideDuration={4000} onClose={closeError}>

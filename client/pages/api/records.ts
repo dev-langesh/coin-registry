@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { connectDb } from "../../server/config/connectDb";
 import { facultyRecord, studentRecord } from "../../server/models/record.model";
 import { Faculty, Student } from "../../server/models/user.model";
 import { calculateDate } from "../../server/utils/calcDate";
@@ -7,6 +8,8 @@ export default async function record(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
+  connectDb();
+
   const students = await Student.find({});
 
   const faculties = await Faculty.find({});

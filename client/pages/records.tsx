@@ -21,6 +21,7 @@ export default function Records({
   const dispatch = useAppDispatch();
 
   useEffect(() => {
+    console.log(studentRecord);
     dispatch(setStudentRecord(studentRecord));
     dispatch(setRegisteredFaculties(registeredFaculties));
     dispatch(setRegisteredStudents(registeredStudents));

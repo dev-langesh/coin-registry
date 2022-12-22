@@ -37,10 +37,10 @@ const facultyRecordSchema = mongoose.Schema(
 );
 
 const studentRecord =
-  mongoose.models.studentRecord ||
-  mongoose.model("studentRecord", studentRecordSchema);
+  mongoose.models["student-record"] ||
+  mongoose.model("student-record", studentRecordSchema);
 const facultyRecord =
-  mongoose.models.facultyRecord ||
-  mongoose.model("facultyRecord", facultyRecordSchema);
+  mongoose.models["faculty-record"] ||
+  mongoose.model("faculty-record", facultyRecordSchema);
 
 module.exports = { studentRecord, facultyRecord };

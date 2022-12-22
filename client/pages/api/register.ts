@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { Faculty, Student } from "../../server/models/user.model";
 import { facultyRecord, studentRecord } from "../../server/models/record.model";
 import { calculateDate } from "../../server/utils/calcDate";
+import { connectDb } from "../../server/config/connectDb";
 
 type Data = {
   error?: String;
@@ -12,6 +13,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  connectDb();
+
   if (req.method == "POST") {
     const body = req.body;
 

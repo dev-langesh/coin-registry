@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { connectDb } from "../../server/config/connectDb";
 import { facultyRecord } from "../../server/models/record.model";
 import { Faculty } from "../../server/models/user.model";
 
@@ -6,6 +7,7 @@ export default async function filteredFaculty(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  connectDb();
   const body = req.body;
 
   const faculty = await Faculty.findOne(body);

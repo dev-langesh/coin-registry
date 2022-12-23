@@ -37,7 +37,7 @@ export default function Home() {
           setLoading(true);
           getCode();
           setLoading(false);
-        }, 1000);
+        }, 1000 * 60 * 5);
         isExecuted.current = true;
       }
     }

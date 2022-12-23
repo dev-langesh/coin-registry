@@ -9,7 +9,6 @@ export default function Home() {
   const svgContainer = useRef<any>(null);
   const [auth, setAuth] = useState<boolean>(false);
   const [pass, setPass] = useState<string>("");
-  const [loading, setLoading] = useState<boolean>(false);
 
   async function getCode() {
     const req = await axios.get("/api/register/generate-qr-code");
@@ -30,14 +29,10 @@ export default function Home() {
   useEffect(() => {
     if (!isExecuted.current) {
       if (auth) {
-        setLoading(true);
         getCode();
-        setLoading(false);
-        setInterval(() => {
-          setLoading(true);
-          getCode();
-          setLoading(false);
-        }, 1000 * 60 * 5);
+        // setInterval(() => {
+        //   getCode();
+        // }, 1000 * 60 * 5);
         isExecuted.current = true;
       }
     }
@@ -71,9 +66,7 @@ export default function Home() {
           <>
             <section className=" w-52 text-center fixed top-1/2 -translate-y-1/2 right-16 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
               <h1 className="text-blue-500 font-bold ">QR code</h1>
-              <div ref={svgContainer} className=" w-40 h-40">
-                {loading && <CircularProgress />}
-              </div>
+              <div ref={svgContainer} className=" w-40 h-40"></div>
               <p className="break-words">
                 If you registered before no need to enter name, dep, year
               </p>

@@ -17,7 +17,7 @@ const initialState = {
   status: "",
 };
 
-export default function RegisterForm() {
+export default function RegisterForm({ token }: { token?: any }) {
   const [inputs, setInputs] = useState<inputType[]>([]);
   const [state, setState] = useState<any>(initialState);
   const [loading, setLoading] = useState<boolean>(false);
@@ -29,6 +29,22 @@ export default function RegisterForm() {
     open: false,
     data: "",
   });
+
+  async function verifyToken() {
+    setLoading(true);
+
+    if (token) {
+      const req = await axios.get(`/api/register/verify/${token}`);
+
+      const data = req.data;
+
+      if (data.error) {
+        setError({ open: true, data: "Invalid token" });
+      }
+    }
+
+    setLoading(false);
+  }
 
   useEffect(() => {
     setInputs(registerStudent);
@@ -59,6 +75,8 @@ export default function RegisterForm() {
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
+
+    verifyToken();
 
     setLoading(true);
 

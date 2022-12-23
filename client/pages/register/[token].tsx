@@ -8,12 +8,12 @@ export default function Register() {
   const router = useRouter();
   const [error, setError] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
+  const [token, setToken] = useState<any>("");
 
   const isExecuted = useRef(false);
 
   async function verifyToken() {
     setLoading(true);
-    const token = router.query.token;
 
     if (token) {
       const req = await axios.get(`/api/register/verify/${token}`);
@@ -30,6 +30,7 @@ export default function Register() {
 
   useEffect(() => {
     if (!isExecuted.current) {
+      setToken(router.query.token);
       verifyToken();
 
       if (router.query.token) {
@@ -45,7 +46,7 @@ export default function Register() {
       ) : error ? (
         <div>Invalid URL</div>
       ) : (
-        <RegisterForm />
+        <RegisterForm token={token} />
       )}
     </main>
   );

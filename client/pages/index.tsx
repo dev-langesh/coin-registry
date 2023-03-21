@@ -5,18 +5,8 @@ import React, { useEffect, useRef, useState } from "react";
 import RegisterForm from "../components/register/RegisterForm";
 
 export default function Home() {
-  const isExecuted = useRef(false);
-  const svgContainer = useRef<any>(null);
   const [auth, setAuth] = useState<boolean>(false);
   const [pass, setPass] = useState<string>("");
-
-  async function getCode() {
-    const req = await axios.get("/api/register/generate-qr-code");
-
-    const data = req.data;
-
-    svgContainer.current.innerHTML = data.svg;
-  }
 
   useEffect(() => {
     const p = window.localStorage.getItem("password");
@@ -25,18 +15,6 @@ export default function Home() {
       setAuth(true);
     }
   }, []);
-
-  useEffect(() => {
-    if (!isExecuted.current) {
-      if (auth) {
-        getCode();
-        // setInterval(() => {
-        //   getCode();
-        // }, 1000 * 60 * 5);
-        isExecuted.current = true;
-      }
-    }
-  }, [auth]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPass(e.target.value);
@@ -64,14 +42,6 @@ export default function Home() {
         {/* qrcode  */}
         {auth ? (
           <>
-            <section className=" w-52 text-center fixed top-1/2 -translate-y-1/2 right-16 shadow-2xl z-40 bg-white flex items-center flex-col p-2">
-              <h1 className="text-blue-500 font-bold ">QR code</h1>
-              <div ref={svgContainer} className=" w-40 h-40"></div>
-              <p className="break-words">
-                If you registered before no need to enter name, dep, year
-              </p>
-            </section>
-
             <RegisterForm />
           </>
         ) : (

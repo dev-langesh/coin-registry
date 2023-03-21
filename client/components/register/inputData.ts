@@ -33,7 +33,7 @@ export const registerStudent: inputType[] = [
   {
     id: 5,
     name: "out_time",
-    type: "text",
+    type: "time",
     placeholder: "Expected leaving time (Eg. 1:10)",
   },
   {
@@ -66,7 +66,7 @@ export const registerFaculty = [
   {
     id: 4,
     name: "out_time",
-    type: "text",
+    type: "time",
     placeholder: "Expected leaving (Eg. 1:10)",
   },
   {
@@ -76,3 +76,17 @@ export const registerFaculty = [
     placeholder: "Status",
   },
 ];
+
+export const departments = [
+  "CSE",
+  "IT",
+  "ECE",
+  "MTECH",
+  "MECH",
+  "AERO",
+  "CIVIL",
+  "EEE",
+  "BIO",
+];
+
+export const year = ["I", "II", "III", "IV"];

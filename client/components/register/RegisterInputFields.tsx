@@ -1,5 +1,13 @@
+import {
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
-import { inputType } from "./inputData";
+import { departments, inputType, year } from "./inputData";
 
 export default function RegisterInputFields({ state, setState, inputs }: any) {
   const handleChange = (e: any) => {
@@ -14,6 +22,37 @@ export default function RegisterInputFields({ state, setState, inputs }: any) {
   return (
     <section className="space-y-6">
       {inputs.map((input: inputType) => {
+        if (input.name === "department" || input.name === "year") {
+          return (
+            <FormControl fullWidth>
+              <InputLabel className="capitalize" id="demo-simple-select-label">
+                {input.name}
+              </InputLabel>
+              <Select
+                className="rounded-none"
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={state[input.name]}
+                label={input.name}
+                name={input.name}
+                onChange={handleChange}
+                variant="outlined"
+                size="small"
+              >
+                {input.name === "department" &&
+                  departments.map((dep: string) => {
+                    return <MenuItem value={dep}>{dep}</MenuItem>;
+                  })}
+
+                {input.name === "year" &&
+                  year.map((yr: string) => {
+                    return <MenuItem value={yr}>{yr}</MenuItem>;
+                  })}
+              </Select>
+            </FormControl>
+          );
+        }
+
         return (
           <div key={input.id} className="space-y-6 flex flex-col">
             <input
@@ -24,6 +63,7 @@ export default function RegisterInputFields({ state, setState, inputs }: any) {
               placeholder={input.placeholder}
               type={input.type}
             />
+
             {input.name === "out_time" && (
               <textarea
                 className="border px-4 py-2 text-sm"

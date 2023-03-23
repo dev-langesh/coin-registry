@@ -121,7 +121,7 @@ export default function RegisterForm({ token }: { token?: any }) {
       <h1 className="text-center text-2xl text-blue-500 font-bold">Register</h1>
 
       <main className="grid grid-cols-12 px-4 gap-4 place-content-center justify-items-center">
-        <div className="col-span-3">
+        <div className="col-span-12 md:col-span-3">
           <UserTypeRadioButton state={state} setState={setState} />
           <CheckBoxGroup
             inputs={inputs}
@@ -131,7 +131,7 @@ export default function RegisterForm({ token }: { token?: any }) {
           />
         </div>
 
-        <div className="col-span-6 space-y-6">
+        <div className="col-span-12 md:col-span-6 space-y-6">
           <RegisterInputFields
             state={state}
             setState={setState}
@@ -143,7 +143,7 @@ export default function RegisterForm({ token }: { token?: any }) {
           </button>
         </div>
 
-        <div className="col-span-3">
+        <div className="hidden md:block md:col-span-3">
           <QrCode />
         </div>
       </main>

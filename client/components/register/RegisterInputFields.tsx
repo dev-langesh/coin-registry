@@ -24,7 +24,7 @@ export default function RegisterInputFields({ state, setState, inputs }: any) {
       {inputs.map((input: inputType) => {
         if (input.name === "department" || input.name === "year") {
           return (
-            <FormControl fullWidth>
+            <FormControl key={input.id} fullWidth>
               <InputLabel className="capitalize" id="demo-simple-select-label">
                 {input.name}
               </InputLabel>

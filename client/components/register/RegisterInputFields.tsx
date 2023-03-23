@@ -40,13 +40,21 @@ export default function RegisterInputFields({ state, setState, inputs }: any) {
                 size="small"
               >
                 {input.name === "department" &&
-                  departments.map((dep: string) => {
-                    return <MenuItem value={dep}>{dep}</MenuItem>;
+                  departments.map((dep: string, index) => {
+                    return (
+                      <MenuItem key={index} value={dep}>
+                        {dep}
+                      </MenuItem>
+                    );
                   })}
 
                 {input.name === "year" &&
-                  year.map((yr: string) => {
-                    return <MenuItem value={yr}>{yr}</MenuItem>;
+                  year.map((yr: string, index) => {
+                    return (
+                      <MenuItem key={index} value={yr}>
+                        {yr}
+                      </MenuItem>
+                    );
                   })}
               </Select>
             </FormControl>

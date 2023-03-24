@@ -23,7 +23,7 @@ const initialState = {
   updateStatus: false,
 };
 
-export default function RegisterForm({ token }: { token?: any }) {
+export default function RegisterForm({hideQrcode, token }: { token?: any ,hideQrcode?:Boolean}) {
   const [inputs, setInputs] = useState<inputType[]>([]);
   const [state, setState] = useState<any>(initialState);
   const [loading, setLoading] = useState<boolean>(false);
@@ -143,9 +143,9 @@ export default function RegisterForm({ token }: { token?: any }) {
           </button>
         </div>
 
-        <div className="hidden md:block md:col-span-3">
+        {!hideQrcode && <div className="hidden md:block md:col-span-3">
           <QrCode />
-        </div>
+        </div>}
       </main>
 
       <AlertSection

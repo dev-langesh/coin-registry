@@ -45,7 +45,7 @@ export default function Register() {
       ) : error ? (
         <div>Invalid URL</div>
       ) : (
-        <RegisterForm />
+        <RegisterForm hideQrcode={true} />
       )}
     </main>
   );

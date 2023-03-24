@@ -87,6 +87,9 @@ export const departments = [
   "CIVIL",
   "EEE",
   "BIO",
+  'EIE',
+  'AIDS',
+  'ROBOTICS'
 ];
 
 export const year = ["I", "II", "III", "IV"];

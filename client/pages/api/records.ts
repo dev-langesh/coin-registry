@@ -10,7 +10,9 @@ export default async function record(
 ) {
   connectDb();
 
-  const date = format(new Date(), "dd-MM-yyyy");
+  // const date = format(new Date(), "dd-MM-yyyy");
+
+  const date = "24-03-2023";
 
   const students = await Student.find({});
 

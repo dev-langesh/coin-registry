@@ -19,7 +19,7 @@ export default async function filteredStudent(
 
   const data = await studentRecord.find({
     student_id: student._id,
-    ...body,
+    // ...body,
   });
 
   return res.json(data);

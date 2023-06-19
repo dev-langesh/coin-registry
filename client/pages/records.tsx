@@ -9,6 +9,7 @@ import {
 } from "../src/features/records/recordSlice";
 import { CircularProgress } from "@mui/material";
 import Record from "../components/records/Record";
+import Link from "next/link";
 
 export default function Records() {
   const dispatch = useAppDispatch();
@@ -40,6 +41,13 @@ export default function Records() {
 
   return (
     <section className=" md:mt-20 p-4 space-y-5 ">
+      <Link
+        className="bg-blue-500 p-2 text-white rounded-sm shadow-md"
+        target="_blank"
+        href="/api/report"
+      >
+        Download Report
+      </Link>
       {loading ? (
         <div className="flex w-full items-center justify-center">
           <CircularProgress />

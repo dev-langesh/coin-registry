@@ -24,8 +24,8 @@ export default function AppBar() {
           <Link href="/">
             <Button text="Register" type="outlined" />
           </Link>
-          <Link href="/records">
-            <Button text="Records" type="contained" />
+          <Link href="/report">
+            <Button text="Report" type="contained" />
           </Link>
           {/* <Link href="/events">
           <Button text="Events" type="outlined" />

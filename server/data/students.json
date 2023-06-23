@@ -1,0 +1,2852 @@
+[
+  {
+    "_id": {
+      "$oid": "63a43a8f270788be1a671ed4"
+    },
+    "reg_no": "2101131",
+    "name": "Langesh",
+    "department": "CSE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a52145e233ffe71b810176"
+    },
+    "reg_no": "1901053",
+    "name": "Harsshanth S",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a5215be233ffe71b81017b"
+    },
+    "reg_no": "1901060",
+    "name": "Karnika Sivani U",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a521cde233ffe71b810194"
+    },
+    "reg_no": "1904061",
+    "name": "Jayant V",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a521d1e233ffe71b810199"
+    },
+    "reg_no": "2005126",
+    "name": "Santhosh kumar D",
+    "department": "IT",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a521f6e233ffe71b8101a0"
+    },
+    "reg_no": "2111009",
+    "name": "Arun S K",
+    "department": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE ",
+    "year": "2nd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a52fbbec7039c4e0f94c0d"
+    },
+    "reg_no": "2011034",
+    "name": "Raghul P",
+    "department": "AIDS",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a53003ec7039c4e0f94c12"
+    },
+    "reg_no": "1904066",
+    "name": "nishanth sathiya k",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a53030ec7039c4e0f94c17"
+    },
+    "reg_no": "1904060",
+    "name": "Hari haran M",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a5385ddd0c97601f8d3e95"
+    },
+    "reg_no": "2003006",
+    "name": "Anjusha J",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a53885dd0c97601f8d3e9a"
+    },
+    "reg_no": "2003004",
+    "name": "Amirthasri S",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a538cadd0c97601f8d3e9f"
+    },
+    "reg_no": "2003005",
+    "name": "Ananya M",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a538f4dd0c97601f8d3ea4"
+    },
+    "reg_no": "2003115",
+    "name": "Rithivk abinov",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a5394fdd0c97601f8d3eb2"
+    },
+    "reg_no": "1904065",
+    "name": "Manoj S ",
+    "department": "MECH ",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a53969dd0c97601f8d3eb8"
+    },
+    "reg_no": "2003024",
+    "name": "Hari pankan Vijay ",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a5397add0c97601f8d3ebd"
+    },
+    "reg_no": "2101256",
+    "name": "Viknesh Rao N ",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a5399fdd0c97601f8d3ec2"
+    },
+    "reg_no": "2101241",
+    "name": "Surendran M ",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a539d1dd0c97601f8d3ec7"
+    },
+    "reg_no": "2101235",
+    "name": "Srikanth M ",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63a91bd3dd7207257ce2267a"
+    },
+    "reg_no": "2007031",
+    "name": "Shreya.V",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ad18a08524750aab43684e"
+    },
+    "reg_no": "1904063",
+    "name": "Karan Nair",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b29bb5d924f77d37a54fdf"
+    },
+    "reg_no": "2011014",
+    "name": "Gokul",
+    "department": "AIDS",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b2b0c032c3f0a5e85ce72d"
+    },
+    "reg_no": "2007045",
+    "name": "varshini.s",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3a07b36760991bb8d1d86"
+    },
+    "reg_no": "2001247",
+    "name": "Varniha",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fac88d40a7347ad296ef"
+    },
+    "reg_no": "2004015",
+    "name": "danie madhavan k",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fafb8d40a7347ad296f5"
+    },
+    "reg_no": "2004027",
+    "name": "KAILAS G ANIR",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fb2e8d40a7347ad296fa"
+    },
+    "reg_no": "2004022",
+    "name": "GOKULRAJ R",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fb5d8d40a7347ad296ff"
+    },
+    "reg_no": "2004042",
+    "name": "MUKESH AMBANI G",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fb878d40a7347ad29704"
+    },
+    "reg_no": "2004003",
+    "name": "AJAY DEVAN V",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fba88d40a7347ad29709"
+    },
+    "reg_no": "2004007",
+    "name": "AMIR SUHAIL S",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fbdc8d40a7347ad2970f"
+    },
+    "reg_no": "2004010",
+    "name": "BALAGURU B A",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b3fbf88d40a7347ad29714"
+    },
+    "reg_no": "2004016",
+    "name": "DEEPAK S",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b4103c1f0b431dfb467683"
+    },
+    "reg_no": "2002214",
+    "name": "Seema Aashikab A",
+    "department": "ECE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b410611f0b431dfb467688"
+    },
+    "reg_no": "2002232",
+    "name": "Sujith Sivan R",
+    "department": "ECE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b410811f0b431dfb46768d"
+    },
+    "reg_no": "2002224",
+    "name": "Soundarya V",
+    "department": "ECE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63b52c81e6c3b80730b6f743"
+    },
+    "reg_no": "1904070",
+    "name": "Pragadesh ",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d4ebeef606808976f573bc"
+    },
+    "reg_no": "2102207",
+    "name": "Shanmathan T S",
+    "department": "ECE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d4ec3ef606808976f573c4"
+    },
+    "reg_no": "1904019",
+    "name": "Ashwin",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d4ec67f606808976f573c9"
+    },
+    "reg_no": "1904042",
+    "name": "Johannes",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d4ef09d19092911a1fbc20"
+    },
+    "reg_no": "2105143",
+    "name": "Sushmith",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d4ef32d19092911a1fbc26"
+    },
+    "reg_no": "2105130",
+    "name": "Sangeetha",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d78120e46117b50dae5518"
+    },
+    "reg_no": "2001035",
+    "name": "Easwaramoorthy",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d78136e46117b50dae551e"
+    },
+    "reg_no": "2001020",
+    "name": "Arunachalam",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d7816be46117b50dae5524"
+    },
+    "reg_no": "2001028",
+    "name": "BharathKumar",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d88e6ee8960141c493f0c9"
+    },
+    "reg_no": "2111047",
+    "name": "R.Sri harri",
+    "department": "AIDS",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d88ea3e8960141c493f0ce"
+    },
+    "reg_no": "2111039",
+    "name": "nishanth",
+    "department": "AIDS",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d88fbae8960141c493f0d3"
+    },
+    "reg_no": "2111023",
+    "name": "Lakshan V K",
+    "department": "AIDS",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d8b9531f9b3eb016dfb12f"
+    },
+    "reg_no": "2007040",
+    "name": "swetha.M",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d8b99c1f9b3eb016dfb138"
+    },
+    "reg_no": "2007028",
+    "name": "sankeerthan",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d8c9c9584e78b0837e6a3c"
+    },
+    "reg_no": "2102223",
+    "name": "sudharsana k",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d8ca03584e78b0837e6a43"
+    },
+    "reg_no": "2102228",
+    "name": "Surya Swaminathan J",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63d8ca28584e78b0837e6a48"
+    },
+    "reg_no": "2102260",
+    "name": "Wesley Kishore R",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db318f162f5cada4904662"
+    },
+    "reg_no": "2111010",
+    "name": "KG Arwindhraj",
+    "department": "AIDS",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db3233162f5cada4904675"
+    },
+    "reg_no": "2111031",
+    "name": "monish kumar",
+    "department": "AIDS",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db37cedf6c47c8edaaf957"
+    },
+    "reg_no": "2004014",
+    "name": "Boojithkumar N",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db3a75b618514c982cc2de"
+    },
+    "reg_no": "2102256",
+    "name": "vishnupriya",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db3ab8b618514c982cc2e5"
+    },
+    "reg_no": "2102202",
+    "name": "sariga",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db3adfb618514c982cc2ea"
+    },
+    "reg_no": "2102247",
+    "name": "vigneshwaran",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db46c52e718b8a018e3ed9"
+    },
+    "reg_no": "2102236",
+    "name": "Trisha.S",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db47091534a02fee58079d"
+    },
+    "reg_no": "2102214",
+    "name": "Sivanika Sri",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db47231534a02fee5807a3"
+    },
+    "reg_no": "2102248",
+    "name": "Vijaya Manogna",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63db99cef89ff13b297d7405"
+    },
+    "reg_no": "2102004",
+    "name": "Abinaya sree",
+    "department": "ECE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63dcc9db7d7bbe68108c348a"
+    },
+    "reg_no": "1904034",
+    "name": "Hariharan R",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63dcd5bc0862c4c950f0de7a"
+    },
+    "reg_no": "2102240",
+    "name": "varunika ",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63de112f7b8a33de14292344"
+    },
+    "reg_no": "2102265",
+    "name": "sobin cb ",
+    "department": "ECE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e097b190a25140de3e11d3"
+    },
+    "reg_no": "1904027",
+    "name": "Ezhil Mekalan M",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e097fd90a25140de3e11db"
+    },
+    "reg_no": "1904064",
+    "name": "karthikeyan A",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0982590a25140de3e11e0"
+    },
+    "reg_no": "2105033",
+    "name": "Ganesan M",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0bba254441bf378546f12"
+    },
+    "reg_no": "2003028",
+    "name": "Janani Priya N J",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0bc5af28bde7bedef1cd4"
+    },
+    "reg_no": "2003150",
+    "name": "Prasanna R",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0c8c6dcb3f8ce13c11ac5"
+    },
+    "reg_no": "2010003",
+    "name": "Arshinisai.H",
+    "department": "RA",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0c8e1dcb3f8ce13c11aca"
+    },
+    "reg_no": "2010008",
+    "name": "Desigan B R",
+    "department": "RA",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0c93fdcb3f8ce13c11ad2"
+    },
+    "reg_no": "2010025",
+    "name": "srijith K M",
+    "department": "RA",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0c967dcb3f8ce13c11ad7"
+    },
+    "reg_no": "2010027",
+    "name": "swathi C",
+    "department": "RA",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0ccb0001cc5bbd7b4ca92"
+    },
+    "reg_no": "2108003",
+    "name": "S Balambika",
+    "department": "AERO",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0ccdc001cc5bbd7b4ca98"
+    },
+    "reg_no": "2108021",
+    "name": "SWETHA K",
+    "department": "AERO",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0cd0c001cc5bbd7b4ca9d"
+    },
+    "reg_no": "2108015",
+    "name": "MAHIZHINI.S",
+    "department": "AERO",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0d22011a9e293b6ef441f"
+    },
+    "reg_no": "2106003",
+    "name": "Bhavesh",
+    "department": "EIE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0d25311a9e293b6ef4426"
+    },
+    "reg_no": "2106022",
+    "name": "Madhav",
+    "department": "EIE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0dd379600fc237c97aaee"
+    },
+    "reg_no": "2106065",
+    "name": "Jijoy Antony T J",
+    "department": "EIE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0e2718bcddccf8a682b75"
+    },
+    "reg_no": "2101134",
+    "name": "Lokshana R J",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0e2a38bcddccf8a682b7c"
+    },
+    "reg_no": "2101150",
+    "name": "MURUGESHWARI M",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0f1522aa7ba975fcf513c"
+    },
+    "reg_no": "2106015",
+    "name": "Kanish V",
+    "department": "EIE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e0f1772aa7ba975fcf5143"
+    },
+    "reg_no": "2106047",
+    "name": "Surya SP",
+    "department": "EIE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e1091fd65a457163599854"
+    },
+    "reg_no": "2004165",
+    "name": "N Rubesh",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e1093bd65a457163599858"
+    },
+    "reg_no": "2004116",
+    "name": "sakthi sundar",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e1094ed65a45716359985b"
+    },
+    "reg_no": "2004155",
+    "name": "vishnu vijaykumar",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e12edb8091ec2a25d6b2a9"
+    },
+    "reg_no": "2004147",
+    "name": "prasanth",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e1c473300c31a2d627aa97"
+    },
+    "reg_no": "2003116",
+    "name": "Sakthi Viswanath ",
+    "department": "EEE",
+    "year": "3rd ",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e1d2f747940db9e2025dc5"
+    },
+    "reg_no": "2102266",
+    "name": "fayaz khan m",
+    "department": "ECE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e219b14018a8bb0cbdbf31"
+    },
+    "reg_no": "2002238",
+    "name": "swatha m",
+    "department": "ECE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e219d04018a8bb0cbdbf37"
+    },
+    "reg_no": "2002204",
+    "name": "Sakthivel V",
+    "department": "ECE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e219e64018a8bb0cbdbf3c"
+    },
+    "reg_no": "2002223 ",
+    "name": "Sonali T",
+    "department": "ECE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e240fe8249ff708f7e7de9"
+    },
+    "reg_no": "2207049",
+    "name": "shanmuga lingam",
+    "department": "BME",
+    "year": "1 st",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e2416d8249ff708f7e7def"
+    },
+    "reg_no": "2207007",
+    "name": "chibee",
+    "department": "BME",
+    "year": "1 st",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e241b78249ff708f7e7df5"
+    },
+    "reg_no": "2201154",
+    "name": "Periya Samy",
+    "department": "CSE",
+    "year": "1st",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e241c38249ff708f7e7dfa"
+    },
+    "reg_no": "2207051",
+    "name": "sivaganesh",
+    "department": "BME",
+    "year": "1st",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e241f18249ff708f7e7dff"
+    },
+    "reg_no": "2207018",
+    "name": "harish",
+    "department": "BME",
+    "year": "1st",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e3609ce62de245ddcecab8"
+    },
+    "reg_no": "2007010",
+    "name": "Dhivya Dharshini",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e360c409dbece4b0690b3b"
+    },
+    "reg_no": "2007013",
+    "name": "Kanishkaa",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e360da09dbece4b0690b40"
+    },
+    "reg_no": "2007037",
+    "name": "Sruthi s",
+    "department": "BIOMEDICAL ENGINEERING ",
+    "year": "3rd ",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e36e96f32ab5455246dfc1"
+    },
+    "reg_no": "2001251",
+    "name": "Vignesh B",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e36ec3f32ab5455246dfc8"
+    },
+    "reg_no": "2001239",
+    "name": "Surya Prasath J P",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e474587347c014bdd3000b"
+    },
+    "reg_no": "2110021",
+    "name": "logesh.s",
+    "department": "RA",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4749a7347c014bdd30010"
+    },
+    "reg_no": "2110050",
+    "name": "Vivaswathh.S ",
+    "department": "RA",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4941f1200a62a8625254a"
+    },
+    "reg_no": "2104012",
+    "name": "daniel roshan ",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4944f1200a62a86252550"
+    },
+    "reg_no": "2104006",
+    "name": "Balaji prasad",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e494851200a62a86252556"
+    },
+    "reg_no": "2104004",
+    "name": "Ashwin S",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e494a71200a62a8625255b"
+    },
+    "reg_no": "2104116",
+    "name": "Rashmika P",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e494c41200a62a86252560"
+    },
+    "reg_no": "2104135",
+    "name": "Vishwa",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4bd5cb43ea115fa9d37e7"
+    },
+    "reg_no": "2104024",
+    "name": "Hemanth Kumar B M",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4be3ab43ea115fa9d37ed"
+    },
+    "reg_no": "2104031",
+    "name": "Kavinkumar S",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4be5db43ea115fa9d37f2"
+    },
+    "reg_no": "2104033",
+    "name": "Kishore S",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4c0e9bac9fd301ed130c1"
+    },
+    "reg_no": "2104007",
+    "name": "benjamin w",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4c117bac9fd301ed130c7"
+    },
+    "reg_no": "2104014",
+    "name": "dhanu prasath N",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4c139bac9fd301ed130cc"
+    },
+    "reg_no": "2104011",
+    "name": "CHANDRA BOSE ",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4c156bac9fd301ed130d1"
+    },
+    "reg_no": "2104035",
+    "name": "MANO RANJITH",
+    "department": "MECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4ca02d8c06d9dcd241368"
+    },
+    "reg_no": "2003143",
+    "name": "VIGNESHWAR M",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4ddee1f8e7f39bc685a4e"
+    },
+    "reg_no": "2004125",
+    "name": "SIVA SUBRAMANIYAN J",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4e9a008f5675fa006be6a"
+    },
+    "reg_no": "2004123",
+    "name": "SIDDESH",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4e9f308f5675fa006be6f"
+    },
+    "reg_no": "2004136",
+    "name": "Vijaya Ganesan V R",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e4ea5b08f5675fa006be74"
+    },
+    "reg_no": "2004129",
+    "name": "Sundaresan K",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e5e73ae39b70387824e463"
+    },
+    "reg_no": "2110014",
+    "name": "hari siva",
+    "department": "RA",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e9fecc6df2ecbfab9cd00f"
+    },
+    "reg_no": "2102205",
+    "name": "sathishkumar",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63e9feff6df2ecbfab9cd015"
+    },
+    "reg_no": "2102242",
+    "name": "Ap.vignesh",
+    "department": "ECE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb253a4538e2a3e2b9cac7"
+    },
+    "reg_no": "2107011",
+    "name": "Jithesh Krishnan P",
+    "department": "BIOMEDICAL ENGINEERING",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb25724538e2a3e2b9cacd"
+    },
+    "reg_no": "2107031",
+    "name": "Priyadharshni",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb25974538e2a3e2b9cad2"
+    },
+    "reg_no": "2107051",
+    "name": "Anuja",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb3fb18ade673d7faf6192"
+    },
+    "reg_no": "2001011",
+    "name": "Ajmal K",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb3fdc8ade673d7faf6198"
+    },
+    "reg_no": "2001014",
+    "name": "Akshaya S",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb40098ade673d7faf619d"
+    },
+    "reg_no": "2001041",
+    "name": "Gayathri S",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb40338ade673d7faf61a2"
+    },
+    "reg_no": "2001049",
+    "name": "Harini AR",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb405a8ade673d7faf61a7"
+    },
+    "reg_no": "2001052",
+    "name": "Harshini A",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb40898ade673d7faf61ac"
+    },
+    "reg_no": "2001058",
+    "name": "Jayakiruba N",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb40bd8ade673d7faf61b1"
+    },
+    "reg_no": "2001059",
+    "name": "Jayaramakrishnan P",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb57f2ab1eb86cc9e9ed5d"
+    },
+    "reg_no": "2110013",
+    "name": "Gautham Ramkumar",
+    "department": "RA",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63eb5869ab1eb86cc9e9ed66"
+    },
+    "reg_no": "2104022",
+    "name": "Hardeep K",
+    "department": "MECH",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ee191e23e45cef32f3ac68"
+    },
+    "reg_no": "71812107051",
+    "name": "anuja p b",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef1833f1190cc362d3e0af"
+    },
+    "reg_no": "2103004",
+    "name": "Abishek T",
+    "department": "EEE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef185cf1190cc362d3e0b5"
+    },
+    "reg_no": "2103015",
+    "name": "Aswin Raja R",
+    "department": "EEE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef1884f1190cc362d3e0ba"
+    },
+    "reg_no": "2103118",
+    "name": "Sanjay Joel",
+    "department": "EEE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef18c1f1190cc362d3e0bf"
+    },
+    "reg_no": "21110034",
+    "name": "rithuvarnan",
+    "department": "R&A",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef1922f1190cc362d3e0c7"
+    },
+    "reg_no": "2110051",
+    "name": "yogaraj",
+    "department": "R&A",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef1944f1190cc362d3e0cc"
+    },
+    "reg_no": "2110052",
+    "name": "samuktha",
+    "department": "R&A",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef1bd03086c67cdca1f186"
+    },
+    "reg_no": "1901235",
+    "name": "Sree Haran",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63ef1c083086c67cdca1f18c"
+    },
+    "reg_no": "1901004",
+    "name": "Aditya Kushwaha",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f2e7edfa1b95e66f7e0276"
+    },
+    "reg_no": "2004133",
+    "name": "Varun kishore R",
+    "department": "MECH",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f328edee8ad0241a38c0d5"
+    },
+    "reg_no": "2001012",
+    "name": "AKASH",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f32914ee8ad0241a38c0db"
+    },
+    "reg_no": "2001030",
+    "name": "BHARATH",
+    "department": "CSE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f34b851af007efa01df424"
+    },
+    "reg_no": "2110035",
+    "name": "SABITHA",
+    "department": "RA",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f34bc41af007efa01df42a"
+    },
+    "reg_no": "2110042",
+    "name": "SHENBHAKA PRIYA",
+    "department": "RA",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f43b045b45498f54585004"
+    },
+    "reg_no": "2003034",
+    "name": "Kaviya B",
+    "department": "EEE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f43b7a5b45498f5458500d"
+    },
+    "reg_no": "2003036",
+    "name": "LAKSHMI K",
+    "department": "EEE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f43bab5b45498f54585012"
+    },
+    "reg_no": "2003029",
+    "name": "Janani R",
+    "department": "EEE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f43e175da8d6907cc526b2"
+    },
+    "reg_no": "2003105",
+    "name": "PAVITHRA",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f443e0e33b29059749afb0"
+    },
+    "reg_no": "2007033",
+    "name": "SNEHA S",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f443fde33b29059749afb6"
+    },
+    "reg_no": "2007041",
+    "name": "SWETHA S",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f4441ce33b29059749afbb"
+    },
+    "reg_no": "2007042",
+    "name": "SWETHA LAKSHMI ",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f456cdb1419e584ba76bc8"
+    },
+    "reg_no": "2003119",
+    "name": "Saravana Kumar S",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f45718b1419e584ba76bce"
+    },
+    "reg_no": "2003136",
+    "name": "Swasthik Venkatesh S",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f47c73e7df56ec1d733504"
+    },
+    "reg_no": "2003122",
+    "name": "Shobika",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f4873be1927104f1c08ffd"
+    },
+    "reg_no": "71812101014",
+    "name": "Archana B",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f48772c8f145b181caabcd"
+    },
+    "reg_no": "2101017",
+    "name": "Ashok Kumar K",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f4abda562da13a5554544d"
+    },
+    "reg_no": "2107002",
+    "name": "Bavanika",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f4aee91656a722d0afa192"
+    },
+    "reg_no": "2106032",
+    "name": "Nikhil S",
+    "department": "EIE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f983a3d80af8d071e7c2e3"
+    },
+    "reg_no": "71812111031",
+    "name": "MONISH KUMAR K M ",
+    "department": "BTECH AIDS",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f983a86548cd93632275a0"
+    },
+    "reg_no": "2101002",
+    "name": "Abhivandan",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f98b1f6d91e00c03da91f7"
+    },
+    "reg_no": "2153042",
+    "name": "prasanna.V",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f98b4a6d91e00c03da91fd"
+    },
+    "reg_no": "2153025",
+    "name": "keerthana.m.g",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f9baf94263a6cbf14bed53"
+    },
+    "reg_no": "2101105",
+    "name": "HARISH.S",
+    "department": "CSE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f9c2891618e630096a1344"
+    },
+    "reg_no": "2105046",
+    "name": "Kandaasmy S",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f9c2b41618e630096a134a"
+    },
+    "reg_no": "2105048",
+    "name": "Kartheepan M",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f9c2d81618e630096a134f"
+    },
+    "reg_no": "2105034",
+    "name": "SM Harikarthik",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f9c3041618e630096a1354"
+    },
+    "reg_no": "2105057",
+    "name": "Manivasagam S",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63f9c3231618e630096a1359"
+    },
+    "reg_no": "2105041",
+    "name": "Inbarasan S",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fc29e1f4302a9920a7ce37"
+    },
+    "reg_no": "2102105",
+    "name": "Abishek",
+    "department": "EEE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fc29f9011daaaecbe1d6fe"
+    },
+    "reg_no": "2102118",
+    "name": "Mirudubashini ",
+    "department": "EEE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fc8484ea04c734dc374083"
+    },
+    "reg_no": "2107016",
+    "name": "kavi bharathi ",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd726dc42f1452a206c6ad"
+    },
+    "reg_no": "71812105034",
+    "name": "SM Harikarthik",
+    "department": "IT",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd75548c4443ce8562c1bc"
+    },
+    "reg_no": "2101014",
+    "name": "Archana B",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd76fa8c4443ce8562c1c8"
+    },
+    "reg_no": "718121011106",
+    "name": "Harish v",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd77368c4443ce8562c1ce"
+    },
+    "reg_no": "2101031",
+    "name": "chandra kumar",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd77648c4443ce8562c1d4"
+    },
+    "reg_no": "2101244",
+    "name": "Tarun Jaikishan PK",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd77838c4443ce8562c1d9"
+    },
+    "reg_no": "2101248",
+    "name": "Varun Ganapathy S",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd77a88c4443ce8562c1de"
+    },
+    "reg_no": "2101250",
+    "name": "Vasanth E",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd8faab72df39d09772930"
+    },
+    "reg_no": "71812101034",
+    "name": "deepak",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fd9726f455bb98d5a08e98"
+    },
+    "reg_no": "71812107016",
+    "name": "kavi bharathi",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fdd8a22389d05349dc2e9e"
+    },
+    "reg_no": "2104027",
+    "name": "JOEL PETER MURRAY",
+    "department": "MECH",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "63fec81eec7d9de4e2dd0212"
+    },
+    "reg_no": "2101037",
+    "name": "Dhamodaran ",
+    "department": "CSE",
+    "year": "2nd year",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64016d69376283f721efe814"
+    },
+    "reg_no": "2001156",
+    "name": "Rahul",
+    "department": "CSE",
+    "year": "3rd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640180f13a6d4ab7fcc3f65f"
+    },
+    "reg_no": "2101128",
+    "name": "Kiran Srinivas ",
+    "department": "CSE ",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405752b24e0bc28ba3a579e"
+    },
+    "reg_no": "1901204",
+    "name": "Rohith Vishwa V.S",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405757324e0bc28ba3a57a4"
+    },
+    "reg_no": "1901232",
+    "name": "Sowmitha",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405759324e0bc28ba3a57a9"
+    },
+    "reg_no": "1901224",
+    "name": "shreejith",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640575b524e0bc28ba3a57ae"
+    },
+    "reg_no": "1901254",
+    "name": "venkat sowmya",
+    "department": "CSE",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405bb7d5f655df0eb2b336e"
+    },
+    "reg_no": "2004058",
+    "name": "MOUNISH",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405bbf65f655df0eb2b337c"
+    },
+    "reg_no": "2003114",
+    "name": "RESHMIN",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405bc135f655df0eb2b3381"
+    },
+    "reg_no": "2003125",
+    "name": "SIDDHARTH",
+    "department": "EEE",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6405c08447c900b210827f8c"
+    },
+    "reg_no": "2004048",
+    "name": "hitendar singh",
+    "department": "MECH",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6406ccf1d50fb254d1aca96e"
+    },
+    "reg_no": "2101110",
+    "name": "harshavarthanan",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6406cd46d50fb254d1aca97b"
+    },
+    "reg_no": "21530001",
+    "name": "Abinaya das",
+    "department": "MTECH CSE",
+    "year": "2023",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6406d5e69a9352728f4cd24c"
+    },
+    "reg_no": "71812153042",
+    "name": "PRASANNA",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6406d6159a9352728f4cd252"
+    },
+    "reg_no": "71812153058",
+    "name": "VARSHINI P A",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6406d6459a9352728f4cd257"
+    },
+    "reg_no": "71812153039",
+    "name": "POOJA S",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64082fdbe396b41b37da3c2a"
+    },
+    "reg_no": "1904017",
+    "name": "aravind",
+    "department": "MECH",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64083fef148f4db892b62ee0"
+    },
+    "reg_no": "71812153025",
+    "name": "KEERTHANA",
+    "department": "M.TECH",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640851e52fd945deb745e26a"
+    },
+    "reg_no": "2153039",
+    "name": "POOJA S",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64098fc1dca77060faf5a960"
+    },
+    "reg_no": "2104018",
+    "name": "Dinesh Arvind M",
+    "department": "MECHANICAL ",
+    "year": "2nd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640aee26c2826dec01bb88d5"
+    },
+    "reg_no": "2105043",
+    "name": "Joe Prathap P J",
+    "department": "IT",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ec8c97e1a6791a679804f"
+    },
+    "reg_no": "1907031",
+    "name": "mridula",
+    "department": "BME",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ec8e37e1a6791a6798059"
+    },
+    "reg_no": "2007030",
+    "name": "SHARATH S",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ec90e7e1a6791a679805e"
+    },
+    "reg_no": "1907049",
+    "name": "Yohitha M",
+    "department": "BME",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ed54ad5eae7d660aae0d2"
+    },
+    "reg_no": "71812101110",
+    "name": "Harshavarthanan G ",
+    "department": "CSE",
+    "year": "2nd",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ed6adf1b7636f9a3bde6f"
+    },
+    "reg_no": "71812102265",
+    "name": "sobin cb",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ed883f1b7636f9a3bde7d"
+    },
+    "reg_no": "2153001",
+    "name": "Abinaya das",
+    "department": "M.TECH CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ed8b0f1b7636f9a3bde82"
+    },
+    "reg_no": "2153058",
+    "name": "VARSHINI",
+    "department": "M.TECH CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "640ef80a84afbfedc0fe1d08"
+    },
+    "reg_no": "2101111",
+    "name": "A.B.Hema",
+    "department": "CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64114a4b21ff1a68a5576d1f"
+    },
+    "reg_no": "2007007",
+    "name": "BHUVANESHWARI M",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64114ab121ff1a68a5576d27"
+    },
+    "reg_no": "2007038",
+    "name": "SUKI MELVINA S",
+    "department": "BME",
+    "year": "3",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64114b0521ff1a68a5576d2f"
+    },
+    "reg_no": "2107026",
+    "name": "NANDHINI",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "641152b34a2bef4d2df2f7ba"
+    },
+    "reg_no": "2107017",
+    "name": "KIRUPPA SUDHAN",
+    "department": "BME",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "641153244a2bef4d2df2f7c4"
+    },
+    "reg_no": "2107009",
+    "name": "JAYAPRAKASH.S.P",
+    "department": "BIOMEDICAL ENGINEERING",
+    "year": "2ND",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64128bc54e0591295f8e599d"
+    },
+    "reg_no": "2101060",
+    "name": "GURUCHARRAN V",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6412acc7b97d4d7580f28ef4"
+    },
+    "reg_no": "1907022",
+    "name": "lakshana",
+    "department": "BME",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6412ace0b97d4d7580f28ef9"
+    },
+    "reg_no": "1907032",
+    "name": "muthu shyamala",
+    "department": "BME",
+    "year": "4",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6419622e7cef9d6206644397"
+    },
+    "reg_no": "2153057",
+    "name": "Tharanika N",
+    "department": "M TECH CSE",
+    "year": "2",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64196ee38e3df7718c43b704"
+    },
+    "reg_no": "2153056",
+    "name": "SRI VIGNESWARAN K",
+    "department": "CSE",
+    "year": "2ND YEAR",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64211ec5477dd0b49ea918fb"
+    },
+    "reg_no": "1901111",
+    "name": "Lekhasree R",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64211eef477dd0b49ea91908"
+    },
+    "reg_no": "1901112",
+    "name": "Logasri P",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64211f17477dd0b49ea9190d"
+    },
+    "reg_no": "1901217",
+    "name": "Sharmili BJ",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64211f3d477dd0b49ea91912"
+    },
+    "reg_no": "1901244",
+    "name": "Subashree PR",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64211f79477dd0b49ea91917"
+    },
+    "reg_no": "1905159",
+    "name": "Shanmugapriya.G",
+    "department": "IT",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64211f9c477dd0b49ea9191c"
+    },
+    "reg_no": "1905109",
+    "name": "Princy.T",
+    "department": "IT",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64217dd932ef0d93b3f9f9a9"
+    },
+    "reg_no": "71812102004",
+    "name": "ABINAYA SREE S",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64217ddc32ef0d93b3f9f9ae"
+    },
+    "reg_no": "2102021",
+    "name": "Bala Amuthan S",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64217f1232ef0d93b3f9f9b6"
+    },
+    "reg_no": "2102019",
+    "name": "Aswath Kumar S T ",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6422754a8dd321f7ba5ece71"
+    },
+    "reg_no": "2101101",
+    "name": "Harisrevatcha R",
+    "department": "CSE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642275808dd321f7ba5ece7a"
+    },
+    "reg_no": "1905131",
+    "name": "N.Shriram",
+    "department": "IT",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6422aa0f82ea7b8924cb3ce7"
+    },
+    "reg_no": "2106045",
+    "name": "Subash R",
+    "department": "EIE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64242249869c8e77dd867a15"
+    },
+    "reg_no": "71812102207",
+    "name": "Shanmathan T S",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642542db7152146c42992381"
+    },
+    "reg_no": "1901146",
+    "name": "Prithika.H",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642543a07152146c42992392"
+    },
+    "reg_no": "21022213",
+    "name": "SILAMBARASU",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6425749edf6becb16ccdc882"
+    },
+    "reg_no": "2106046",
+    "name": "Subash",
+    "department": "EIE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642672b26a638dddff0efc8a"
+    },
+    "reg_no": "2102227",
+    "name": "Surya.R",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642a956bd2b696919cad268d"
+    },
+    "reg_no": "1901265",
+    "name": "Surya Narayanan",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642a9584d2b696919cad2692"
+    },
+    "reg_no": "1901219",
+    "name": "Shivani R",
+    "department": "CSE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642cf5168e8d378226637910"
+    },
+    "reg_no": "1904067",
+    "name": "pandia rajan ",
+    "department": "MECH",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642d0b8896b0adada4bbeb6e"
+    },
+    "reg_no": "1904062",
+    "name": "johnthomas j",
+    "department": "MECH",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642d0bae96b0adada4bbeb75"
+    },
+    "reg_no": "1904068",
+    "name": "prasanna venkatesh.s",
+    "department": "MECH",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e79630468b9f1a30d8d45"
+    },
+    "reg_no": "71812153001",
+    "name": "Abinaya das T",
+    "department": "MTECH",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e7a1d0468b9f1a30d8d4c"
+    },
+    "reg_no": "71812111012",
+    "name": "DHANUSH.N.P",
+    "department": "AIDS",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "642e7a660468b9f1a30d8d55"
+    },
+    "reg_no": "2111040",
+    "name": "Nithyashree",
+    "department": "AIDS",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64339a5f1d79b89099733245"
+    },
+    "reg_no": "2203043",
+    "name": "MURALI KRISHNAN R",
+    "department": "EEE",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6437bb9a19a320946c24d76f"
+    },
+    "reg_no": "2101138",
+    "name": "Mahalakshmi",
+    "department": "CSE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6437bbc119a320946c24d774"
+    },
+    "reg_no": "2101146",
+    "name": "Monica.R",
+    "department": "CSE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643d36035a2a097df85852c2"
+    },
+    "reg_no": "2107048",
+    "name": "vishnupriya",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643d361f5a2a097df85852c8"
+    },
+    "reg_no": "2107003",
+    "name": "dhanusree",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643d363e5a2a097df85852ce"
+    },
+    "reg_no": "2107050",
+    "name": "yogeshwaran",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643d36855a2a097df85852d3"
+    },
+    "reg_no": "2107023",
+    "name": "Mohamed Aslam",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643e34450cb82b71ded10a7f"
+    },
+    "reg_no": "2102213",
+    "name": "Silambarasu",
+    "department": "ECE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643e6261814e8cdfae473860"
+    },
+    "reg_no": "2107020",
+    "name": "LALITH SAIRAM S V",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643e628b814e8cdfae473877"
+    },
+    "reg_no": "2107035",
+    "name": "Sarvessh N",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643e62f335cde1594e659b38"
+    },
+    "reg_no": "71812107018",
+    "name": "KIRUTHIKA.P",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643e633135cde1594e659b42"
+    },
+    "reg_no": "2107010",
+    "name": "N.JEEVA PRAKASH ",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "643e6335814e8cdfae47388a"
+    },
+    "reg_no": "71812107004",
+    "name": "T.DHARANI",
+    "department": "BIO",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "644a2586a2d15acc36fbafab"
+    },
+    "reg_no": "2101123",
+    "name": "Karthick Raja S",
+    "department": "CSE",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6450ce71c04c762b01bf6532"
+    },
+    "reg_no": "71812104102",
+    "name": "Mithunavaanan N",
+    "department": "MECH",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "646476f01af792026d6df534"
+    },
+    "reg_no": "2104102",
+    "name": "Mithunavaanan N",
+    "department": "MECH",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "646477261af792026d6df53f"
+    },
+    "reg_no": "2104129",
+    "name": "Timothy Motha N",
+    "department": "MECH",
+    "year": "II",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64785e024db14ece310dfb25"
+    },
+    "reg_no": "2253058",
+    "name": "Nikhil Basker KS",
+    "department": "MTECH",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64785e084db14ece310dfb2a"
+    },
+    "reg_no": "2253048",
+    "name": "Sri Mithila P G ",
+    "department": "MTECH",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64785e0c4db14ece310dfb2f"
+    },
+    "reg_no": "2253060",
+    "name": "Sarvesh kumar .S.S",
+    "department": "MTECH",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648950e9fe537892100ab857"
+    },
+    "reg_no": "2111012",
+    "name": "Dhanush.N.P",
+    "department": "AIDS",
+    "year": "III",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6489515cfe537892100ab866"
+    },
+    "reg_no": "2111065",
+    "name": "Dhanush kumar J",
+    "department": "AIDS",
+    "year": "III",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6489563ec9ffe848f08da642"
+    },
+    "reg_no": "2003007",
+    "name": "Arnesh S",
+    "department": "EEE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "64895672c9ffe848f08da648"
+    },
+    "reg_no": "2003032",
+    "name": "Kavin Sreeram A G",
+    "department": "EEE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648aa44e4211827d12158e7f"
+    },
+    "reg_no": "71812202113",
+    "name": "Kamalesh.S",
+    "department": "ECE",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648aa4ad4211827d12158e8a"
+    },
+    "reg_no": "2204128",
+    "name": "T.Surya kumar",
+    "department": "MECH",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648aa4ca4211827d12158e8f"
+    },
+    "reg_no": "2202142",
+    "name": "Nandha Krishnan .B",
+    "department": "ECE",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648aa4dc4211827d12158e94"
+    },
+    "reg_no": "2202140",
+    "name": "Monish Kumar",
+    "department": "ECE",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648bd9f47068f7c7b08ec16b"
+    },
+    "reg_no": "71812204121",
+    "name": "Siva Muthiah ",
+    "department": "MECH",
+    "year": "I",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648ff472139f8db7a1c6ac08"
+    },
+    "reg_no": "2003050",
+    "name": "hiri haran ",
+    "department": "EEE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648ff4a4139f8db7a1c6ac0f"
+    },
+    "reg_no": "2003048",
+    "name": "Hari prasath",
+    "department": "EEE",
+    "year": "IV",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "648ff4cc139f8db7a1c6ac14"
+    },
+    "reg_no": "2103032",
+    "name": "Harish M",
+    "department": "EEE",
+    "year": "III",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6493fee665957be060fbcab3"
+    },
+    "reg_no": "2111001",
+    "name": "Akash RL",
+    "department": "AIDS",
+    "year": "III",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6493ff1465957be060fbcac0"
+    },
+    "reg_no": "2111021",
+    "name": "Kishore R",
+    "department": "AIDS",
+    "year": "III",
+    "__v": 0
+  }
+]

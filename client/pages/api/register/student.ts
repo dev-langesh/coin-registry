@@ -36,8 +36,9 @@ export default async function registerStudent(
     }
 
     body.student_id = user._id;
-    await studentRecord.create(body);
+    const a = await studentRecord.create(body);
 
+    console.log(a);
     res.json({ message: "Student registered" });
   } catch (err: any) {
     res.json({ error: err.message });

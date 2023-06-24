@@ -1,9 +1,9 @@
-const { MongoClient } = require("mongodb");
+const { MongoClient, CURSOR_FLAGS } = require("mongodb");
 const { format } = require("date-fns");
 
 async function getRecord(req, res) {
   const url = process.env.MONGO_URI; // Replace with your MongoDB connection URL
-  const dbName = "registry"; // Replace with your database name
+  const dbName = "new-registry"; // Replace with your database name
 
   const client = new MongoClient(url);
 
@@ -24,11 +24,19 @@ async function getRecord(req, res) {
     const studentsData = await students.find().toArray();
     const facultiesData = await faculties.find().toArray();
 
-    const query = { date: { $gte: new Date(from), $lte: new Date(to) } };
+    
+    let query = { date: { $gte: new Date(from), $lte: new Date(to) } };
 
-    console.log(query);
+    if(from == to){
+      query = {date : new Date(from)}
+    }
 
+    console.log(query)
+    
+    
     const studentRecData = await studentRec.find(query).toArray();
+    
+    // console.log(studentRecData)
 
     const facultyRecData = await facultyRec.find(query).toArray();
 

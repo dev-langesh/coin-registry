@@ -80,7 +80,7 @@ export default function RegisterForm({hideQrcode, token }: { token?: any ,hideQr
 
     setLoading(true);
 
-    const date = format(new Date(), "dd-MM-yyyy");
+    const date = new Date();
     const in_time = format(new Date(), "hh:mm");
 
     state.date = date;

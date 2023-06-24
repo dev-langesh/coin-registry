@@ -10,7 +10,7 @@ const studentRecordSchema = mongoose.Schema(
     purpose: { type: String },
     in_time: String,
     out_time: { type: String },
-    date: String,
+    date: Date,
     status: String,
   },
   {
@@ -28,7 +28,7 @@ const facultyRecordSchema = mongoose.Schema(
     purpose: { type: String },
     in_time: String,
     out_time: { type: String },
-    date: String,
+    date: Date,
     status: String,
   },
   {

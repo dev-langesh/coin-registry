@@ -8,7 +8,7 @@ require("dotenv").config();
 
 async function generateReport(req, res) {
   const url = process.env.MONGO_URI; // Replace with your MongoDB connection URL
-  const dbName = "registry"; // Replace with your database name
+  const dbName = "new-registry"; // Replace with your database name
 
   const client = new MongoClient(url);
 

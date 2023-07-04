@@ -1,10 +1,11 @@
 const { MongoClient, CURSOR_FLAGS } = require("mongodb");
 const { format } = require("date-fns");
-const pdfDocument = require("pdfkit");
+const { PDFDocument, rgb, StandardFonts } = require("pdf-lib");
+const fs = require("fs");
 
 async function generatePDF(req, res) {
   const url = process.env.MONGO_URI; // Replace with your MongoDB connection URL
-  const dbName = "new-registry"; // Replace with your database name
+  const dbName = "registry"; // Replace with your database name
 
   const client = new MongoClient(url);
 
@@ -29,11 +30,11 @@ async function generatePDF(req, res) {
       query = { date: new Date(from) };
     }
 
-    console.log(query);
+    // console.log(query);
 
     const studentRecData = await studentRec.find(query).toArray();
 
-    // console.log(studentRecData)
+    // console.log(studentRecData);
 
     const facultyRecData = await facultyRec.find(query).toArray();
 
@@ -55,7 +56,7 @@ async function generatePDF(req, res) {
 
     const data = [...studentData, ...facultyData];
 
-    console.log(data);
+    // console.log(data);
 
     const studentCount = {
       CSE: 0,
@@ -104,10 +105,123 @@ async function generatePDF(req, res) {
 
     const maxUsed = data.find((s) => s.reg_no === recordWithMaxCount);
 
+    // Create a new PDF document
+    const doc = await PDFDocument.create();
+    const page = doc.addPage();
+
+    // Set document properties
+    doc.setTitle("Student Entries");
+
+    // Set fonts
+    const font = await doc.embedFont(StandardFonts.Helvetica);
+
+    // Set initial table position and dimensions
+    const tableTop = 700;
+    const cellPadding = 5;
+    const columnWidth = 60;
+    const rowHeight = 20;
+    const rowSpacing = 10;
+
+    // Add table headers
+    const headers = [
+      "Registration No",
+      "Name",
+      "Department",
+      "Year",
+      "Date",
+      "In Time",
+      "Out Time",
+      "Purpose",
+      "Status",
+    ];
+    headers.forEach((header, index) => {
+      const headerX =
+        50 +
+        index * columnWidth +
+        (columnWidth - font.widthOfTextAtSize(header, 12)) / 2;
+      page.drawText(header, {
+        x: headerX,
+        y: tableTop,
+        size: 12,
+        font,
+        color: rgb(0, 0, 0),
+      });
+    });
+
+    // Add table rows
+    let currentRow = 0;
+    data.forEach((entry) => {
+      const rowY = tableTop - (currentRow + 1) * (rowHeight + rowSpacing);
+
+      const row = [
+        entry.reg_no,
+        entry.name,
+        entry.department,
+        String(entry.year).split("\n").join(" "),
+        String(entry.date).split("\n").join(" "),
+        String(entry.in_time).split("\n").join(" "),
+        String(entry.out_time).split("\n").join(" "),
+        String(entry.purpose).split("\n").join(" "),
+        String(entry.status).split("\n").join(" "),
+      ];
+
+      row.forEach((cell, index) => {
+        const text = String(cell);
+        const textWidth = estimateTextWidth(text, font, 10);
+        const cellWidth = Math.min(textWidth + cellPadding * 2, columnWidth);
+
+        const cellX = 50 + index * columnWidth + (columnWidth - cellWidth) / 2;
+        const cellY = rowY + rowHeight / 2 - 5;
+
+        const availableSpace =
+          rowY - (tableTop - (currentRow + 2) * (rowHeight + rowSpacing));
+        const maxTextHeight = Math.floor(availableSpace - cellPadding * 2);
+
+        let lines = [];
+        let currentText = text;
+
+        while (currentText.length > 0) {
+          const currentIndex = Math.floor(
+            ((cellWidth - cellPadding * 2) * currentText.length) / textWidth
+          );
+          const line = currentText.slice(0, currentIndex);
+          lines.push(line);
+          currentText = currentText.slice(currentIndex);
+        }
+
+        lines.forEach((line, lineIndex) => {
+          const lineY = cellY - lineIndex * (font.heightAtSize(10) + 2);
+
+          page.drawText(line, {
+            x: cellX,
+            y: lineY,
+            size: 10,
+            font,
+            color: rgb(0, 0, 0),
+          });
+        });
+      });
+
+      currentRow++;
+    });
+
+    // Finalize the PDF and save it to a file
+    const pdfBytes = await doc.save();
+    fs.writeFileSync("student-entries.pdf", pdfBytes);
+
     res.json({ record: data, studentCount, maxUsed, maxRecordCount });
   } catch (e) {
     res.json({ e: e.message });
   }
+}
+
+function estimateTextWidth(text, font, fontSize) {
+  const averageCharWidth =
+    font.widthOfTextAtSize(
+      "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+      fontSize
+    ) / 62;
+  return averageCharWidth * text.length;
 }
 
 module.exports = { generatePDF };

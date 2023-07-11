@@ -8,6 +8,7 @@ const { generateReport } = require("./controllers/report");
 const { getRecord } = require("./controllers/record");
 const cors = require("cors");
 const { convert } = require("./controllers/convertStringToDate");
+const { generatePDF } = require("./controllers/generatePdf");
 const app = express();
 
 app.use(express.json());
@@ -19,7 +20,9 @@ app.get("/report", generateReport);
 
 app.post("/record", getRecord);
 
-app.post("/convert", convert);
+app.post("/generate-pdf", generatePDF);
+
+// app.post("/convert", convert);
 
 // Start the server
 const PORT = process.env.PORT || 8000;

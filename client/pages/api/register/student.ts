@@ -9,6 +9,8 @@ export default async function registerStudent(
   try {
     const body = req.body;
 
+    req.body.date = new Date();
+
     let user = await Student.findOne({ reg_no: body.reg_no });
 
     if (body.registered && !user) {

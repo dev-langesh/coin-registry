@@ -27,7 +27,7 @@ export default async function generateCode(
   console.log(token);
 
   qrcode.toString(
-    `${process.env.NEXT_PUBLIC_SERVER_URL}/register/${token}`,
+    `https://coin-registry.vercel.app/register/${token}`,
     { type: "svg" },
     (err, code) => {
       return res.json({ svg: code });

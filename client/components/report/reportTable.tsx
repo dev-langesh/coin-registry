@@ -38,7 +38,7 @@ export default function ReportTable({ data, maxRecordCount, maxUsed }: any) {
         <tbody>
           {Object.keys(count).map((dep, i) => {
             return (
-              <tr className="hover:bg-slate-100">
+              <tr key={i} className="hover:bg-slate-100">
                 <td className="border border-slate-300 p-2  ">{dep}</td>
                 <td className="border border-slate-300 p-2  ">{count[dep]}</td>
               </tr>

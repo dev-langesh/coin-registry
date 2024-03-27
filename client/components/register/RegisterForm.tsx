@@ -143,9 +143,9 @@ export default function RegisterForm({hideQrcode, token }: { token?: any ,hideQr
           </button>
         </div>
 
-        {!hideQrcode && <div className="hidden md:block md:col-span-3">
+        {/* {!hideQrcode && <div className="hidden md:block md:col-span-3">
           <QrCode />
-        </div>}
+        </div>} */}
       </main>
 
       <AlertSection

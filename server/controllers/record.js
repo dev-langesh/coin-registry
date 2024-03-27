@@ -3,7 +3,7 @@ const { format } = require("date-fns");
 
 async function getRecord(req, res) {
   const url = process.env.MONGO_URI; // Replace with your MongoDB connection URL
-  const dbName = "new-registry"; // Replace with your database name
+  const dbName = "coin-registry"; // Replace with your database name
 
   const client = new MongoClient(url);
 
@@ -78,7 +78,7 @@ async function getRecord(req, res) {
       const department = rec.department.toUpperCase();
 
       if (!studentCount[department.trim()]) {
-        studentCount[department.trim()] = 1;
+        studentCount[department.trim()] = 0;
       }
 
       studentCount[department.trim()] += 1;

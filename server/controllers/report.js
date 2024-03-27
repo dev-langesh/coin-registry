@@ -8,7 +8,7 @@ require("dotenv").config();
 
 async function generateReport(req, res) {
   const url = process.env.MONGO_URI; // Replace with your MongoDB connection URL
-  const dbName = "new-registry"; // Replace with your database name
+  const dbName = "coin-registry"; // Replace with your database name
 
   const client = new MongoClient(url);
 
@@ -36,6 +36,8 @@ async function generateReport(req, res) {
     const studentRecData = await studentRec.find(query).toArray();
 
     const facultyRecData = await facultyRec.find(query).toArray();
+
+    console.log(studentRecData,facultyRecData);
 
     const studentData = studentRecData.map((sr) => {
       const student = studentsData.find((s) => s._id.equals(sr.student_id));

@@ -1,12 +1,14 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { facultyRecord } from "../../../server/models/record.model";
 import { Faculty } from "../../../server/models/user.model";
+import { connectDb } from "../../../server/config/connectDb";
 
 export default async function registerStudent(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   try {
+    connectDb();
     const body = req.body;
 
     let user = await Faculty.findOne({ faculty_id: body.faculty_id });

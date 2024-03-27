@@ -1,12 +1,14 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { studentRecord } from "../../../server/models/record.model";
 import { Student } from "../../../server/models/user.model";
+import { connectDb } from "../../../server/config/connectDb";
 
 export default async function registerStudent(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   try {
+    connectDb()
     const body = req.body;
 
     req.body.date = new Date();
